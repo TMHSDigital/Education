@@ -2,25 +2,26 @@
 
 This repository is dedicated to educational resources and materials.
 
-## Language Library
+## Directory
 
-You can find additional resources in the [Language Library repository](https://github.com/TMHSDigital/Language-Library).
+### Language Library
+[![Language Library](https://img.shields.io/badge/Language%20Library-Repository-blue)](https://github.com/TMHSDigital/Language-Library)
 
-### Cloning the Repository
+### Java JavaScript Lab
+[![Java JavaScript Lab](https://img.shields.io/badge/Java%20JavaScript%20Lab-Repository-blue)](https://github.com/TMHSDigital/Java-JavaScript-Lab)
 
-To clone the Language Library repository, use the following command:
+### SQL Guide
+[![SQL Guide](https://img.shields.io/badge/SQL%20Guide-Repository-blue)](https://github.com/TMHSDigital/SQL-Guide.git)
 
-```sh
-gh repo clone TMHSDigital/Language-Library
-```
+### Controlled Environment Tutorial
+[![Controlled Environment Tutorial](https://img.shields.io/badge/Controlled%20Environment%20Tutorial-Repository-blue)](https://github.com/TMHSDigital/Controlled-Environment-Tutorial.git)
 
-Alternatively, you can use SSH:
+### Free Asset Sources
+[![Free Asset Sources](https://img.shields.io/badge/Free%20Asset%20Sources-Repository-blue)](https://github.com/TMHSDigital/free-asset-sources.git)
 
-```sh
-git@github.com:TMHSDigital/Language-Library.git
-```
+### Local AI
+[![Local AI](https://img.shields.io/badge/Local%20AI-Repository-blue)](https://github.com/TMHSDigital/local-ai.git)
 
 ## License
 
 This project is licensed under the MIT License.
-```
