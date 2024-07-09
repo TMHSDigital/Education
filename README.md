@@ -24,12 +24,3 @@ git@github.com:TMHSDigital/Language-Library.git
 
 This project is licensed under the MIT License.
 ```
-
-### Instructions to Apply Changes
-
-1. **Clone the `Education` repository** to your local machine if you haven't already.
-
-   ```sh
-   git clone https://github.com/TMHSDigital/Education.git
-   cd Education
-   ```
