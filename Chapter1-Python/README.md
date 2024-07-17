@@ -1,4 +1,5 @@
-Chapter-1/
+# Chapter 1 - Python
+```
   ├── 01_Introduction_to_Python/
   │   ├── README.md
   ├── 02_Python_Installation_and_Setup/
