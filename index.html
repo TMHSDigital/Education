@@ -48,18 +48,18 @@ const EducationRepository = () => {
       </div>
 
       <h2 className="text-2xl font-semibold text-gray-700 mb-4 animate-fadeIn animation-delay-600">Chapters</h2>
-      <ul className="space-y-3">
+      <ul className="space-y-3"></ul>
         {filteredChapters.map((chapter) => (
           <li 
             key={chapter.id} 
             className={`bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 ease-in-out 
                         ${hoveredChapter === chapter.id ? 'scale-105' : 'scale-100'}`}
-            onMouseEnter={() => setHoveredChapter(chapter.id)}
+            onMouseEnter={() => { setHoveredChapter(chapter.id) }}
             onMouseLeave={() => setHoveredChapter(null)}
           >
             <div 
               className={`flex justify-between items-center cursor-pointer p-4 ${chapter.color} text-white`}
-              onClick={() => setExpandedChapter(expandedChapter === chapter.id ? null : chapter.id)}
+              onClick={() => { setExpandedChapter(expandedChapter === chapter.id ? null : chapter.id) }}
             >
               <span className="font-semibold">{chapter.title}</span>
               {expandedChapter === chapter.id ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
