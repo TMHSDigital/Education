@@ -18,4 +18,3 @@ library(ggplot2)
 data <- data.frame(x=1:10, y=rnorm(10))
 ggplot(data, aes(x=x, y=y)) + geom_point() + ggtitle("ggplot2 Example")
 ```
-

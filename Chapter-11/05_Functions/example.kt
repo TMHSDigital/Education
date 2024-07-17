@@ -11,4 +11,3 @@ fun main() {
     greet("World")
     println(add(2, 3))
 }
-
