@@ -3,11 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education Repository</title>
-  <link rel="stylesheet" href="index.css">
+  <title>Educational Repository</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-family: 'Lobster', cursive;
+      font-size: 3em;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .chapter-list {
+      list-style: none;
+      padding: 0;
+    }
+    .chapter-list li {
+      margin: 10px 0;
+    }
+    .chapter-list a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .chapter-list a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <div id="root"></div>
-  <script src="build/index.js"></script>
+  <header>
+    <h1>Educational Repository</h1>
+    <p>Explore the chapters and learn various programming languages and tools.</p>
+  </header>
+  <div class="container">
+    <ul class="chapter-list">
+      <li><a href="Chapter-1/index.html">Chapter 1: Introduction to Tools</a></li>
+      <li><a href="Chapter-2/index.html">Chapter 2: Docker</a></li>
+      <li><a href="Chapter-3/index.html">Chapter 3: Git</a></li>
+      <li><a href="Chapter-4/index.html">Chapter 4: VSCode</a></li>
+      <li><a href="Chapter-5/index.html">Chapter 5: Jenkins</a></li>
+      <li><a href="Chapter-6/index.html">Chapter 6: Kubernetes</a></li>
+      <li><a href="Chapter-7/index.html">Chapter 7: Terraform</a></li>
+      <li><a href="Chapter-8/index.html">Chapter 8: OpenWebUI</a></li>
+      <li><a href="Chapter-9/index.html">Chapter 9: AnythingLLM</a></li>
+      <li><a href="Chapter-10/index.html">Chapter 10: Postman</a></li>
+      <!-- Add more chapters as needed -->
+    </ul>
+  </div>
 </body>
 </html>
