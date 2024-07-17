@@ -1,6 +1,6 @@
 # Introduction to JavaScript
 
-JavaScript is a versatile, high-level programming language that is primarily used to create interactive effects within web browsers. It is an essential technology of the World Wide Web, alongside HTML and CSS.
+JavaScript is a versatile, high-level programming language that is primarily used to create interactive effects within web browsers. It is an essential technology of the World Wide Web, alongside HTML and CSS.    
 
 ## Why Learn JavaScript?
 
