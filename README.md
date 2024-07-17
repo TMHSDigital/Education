@@ -74,15 +74,15 @@
   Give a ⭐️ if you like this project!
 </p>
 
----
-
 ## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<p align="center">
+  This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.
+</p>
 
 ## ✍️ Author
 <p align="center">
   <strong>Thomas Mathes</strong><br>
-  <a href="https://github.com/TMHSDigital">GitHub Profile</a> |
-  <a href="mailto:thomas@tmhsdigital.com">Email</a> |
-  <a href="https://www.linkedin.com/in/thomasmathes/">LinkedIn</a>
+  <a href="https://github.com/TMHSDigital"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"></a>
+  <a href="mailto:thomas@tmhsdigital.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://www.linkedin.com/in/thomasmathes/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
