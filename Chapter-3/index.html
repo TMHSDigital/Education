@@ -70,6 +70,12 @@
     .btn:hover {
       background-color: #0056b3;
     }
+    .resource-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -84,19 +90,22 @@
       <a href="#advanced">Advanced Topics</a>
     </nav>
     <section id="intro">
-      
-<h2>Introduction to Java</h2>
-<p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
-<a href="https://www.oracle.com/java/" target="_blank" class="btn">Learn More</a>
-
+      <h2>Introduction to Java</h2>
+      <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
+      <pre><code class="language-java">public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}</code></pre>
+      <a href="https://www.oracle.com/java/" target="_blank" class="btn">Learn More</a>
     </section>
     <section id="getting-started">
       <h2>Getting Started</h2>
       <p>To get started with Java, follow the steps below:</p>
       <ul>
-        <li>Step 1: Install Java</li>
-        <li>Step 2: Set up your development environment</li>
-        <li>Step 3: Write your first Java program</li>
+        <li>Step 1: Install the Java Development Kit (JDK) from the official <a href="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html" target="_blank">Oracle website</a>.</li>
+        <li>Step 2: Set up your development environment using an IDE like <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a> or <a href="https://eclipse.org/" target="_blank">Eclipse</a>.</li>
+        <li>Step 3: Write your first Java program in a file with a `.java` extension and run it using the command <code>javac filename.java</code> followed by <code>java filename</code>.</li>
       </ul>
     </section>
     <section id="advanced">
@@ -107,6 +116,17 @@
         <li>Topic 2: Java libraries and frameworks</li>
         <li>Topic 3: Best practices and design patterns in Java</li>
       </ul>
+    </section>
+    <section id="resources">
+      <h2>Java Resources</h2>
+      <div class="resource-buttons">
+        <a href="https://docs.oracle.com/en/java/" target="_blank" class="btn">Official Documentation</a>
+        <a href="https://www.geeksforgeeks.org/java/" target="_blank" class="btn">GeeksforGeeks</a>
+        <a href="https://www.tutorialspoint.com/java/index.htm" target="_blank" class="btn">TutorialsPoint</a>
+        <a href="https://stackoverflow.com/questions/tagged/java" target="_blank" class="btn">Stack Overflow</a>
+        <a href="https://mvnrepository.com/" target="_blank" class="btn">Maven Repository</a>
+        <a href="https://github.com/java" target="_blank" class="btn">Java on GitHub</a>
+      </div>
     </section>
   </div>
 </body>
