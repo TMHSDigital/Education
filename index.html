@@ -1,91 +1,69 @@
-import React, { useState } from 'react';
-import { Search, BookOpen, ChevronDown, ChevronUp } from 'lucide-react';
-
-const chapters = [
-  { id: 1, title: "Python", path: "Chapter-1/index.html", color: "bg-blue-500" },
-  { id: 2, title: "JavaScript", path: "Chapter-2/index.html", color: "bg-yellow-500" },
-  { id: 3, title: "Java", path: "Chapter-3/index.html", color: "bg-red-500" },
-  { id: 4, title: "C#", path: "Chapter-4/index.html", color: "bg-purple-500" },
-  { id: 5, title: "Lua", path: "Chapter-5/index.html", color: "bg-blue-400" },
-  { id: 6, title: "CSS", path: "Chapter-6/index.html", color: "bg-pink-500" },
-  { id: 7, title: "C++", path: "Chapter-7/index.html", color: "bg-blue-600" },
-  { id: 8, title: "Go", path: "Chapter-8/index.html", color: "bg-cyan-500" },
-  { id: 9, title: "Swift", path: "Chapter-9/index.html", color: "bg-orange-500" },
-  { id: 10, title: "Ruby", path: "Chapter-10/index.html", color: "bg-red-600" },
-  { id: 11, title: "Kotlin", path: "Chapter-11/index.html", color: "bg-purple-600" },
-  { id: 12, title: "R", path: "Chapter-12/index.html", color: "bg-blue-700" },
-  { id: 13, title: "Tools", path: "Tools/index.html", color: "bg-gray-500" },
-  { id: 14, title: "APIs", path: "API/index.html", color: "bg-green-500" },
-];
-
-const EducationRepository = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [expandedChapter, setExpandedChapter] = useState(null);
-  const [hoveredChapter, setHoveredChapter] = useState(null);
-
-  const filteredChapters = chapters.filter(chapter =>
-    chapter.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-  return (
-    <div className="max-w-4xl mx-auto p-6 bg-gray-100 min-h-screen">
-      <h1 className="text-5xl font-bold text-gray-800 mb-4 text-center animate-fadeIn">
-        Education Repository
-      </h1>
-      <p className="text-gray-600 mb-6 text-center animate-fadeIn animation-delay-200">
-        Explore our comprehensive collection of programming languages, tools, and APIs.
-      </p>
-      
-      <div className="relative mb-6 animate-fadeIn animation-delay-400">
-        <input
-          type="text"
-          placeholder="Search chapters..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="w-full p-3 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out"
-        />
-        <Search className="absolute left-3 top-3.5 text-gray-400" size={24} />
-      </div>
-
-      <h2 className="text-2xl font-semibold text-gray-700 mb-4 animate-fadeIn animation-delay-600">Chapters</h2>
-      <ul className="space-y-3">
-        {filteredChapters.map((chapter) => (
-          <li 
-            key={chapter.id} 
-            className={`bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 ease-in-out 
-                        ${hoveredChapter === chapter.id ? 'scale-105' : 'scale-100'}`}
-            onMouseEnter={() => setHoveredChapter(chapter.id)}
-            onMouseLeave={() => setHoveredChapter(null)}
-          >
-            <div 
-              className={`flex justify-between items-center cursor-pointer p-4 ${chapter.color} text-white`}
-              onClick={() => setExpandedChapter(expandedChapter === chapter.id ? null : chapter.id)}
-            >
-              <span className="font-semibold">{chapter.title}</span>
-              {expandedChapter === chapter.id ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-            </div>
-            <div 
-              className={`overflow-hidden transition-all duration-300 ease-in-out
-                          ${expandedChapter === chapter.id ? 'max-h-40' : 'max-h-0'}`}
-            >
-              <div className="p-4 bg-white">
-                <p className="text-gray-600 mb-2">
-                  Discover the fundamentals and advanced concepts of {chapter.title}.
-                </p>
-                <a 
-                  href={chapter.path} 
-                  className="inline-flex items-center text-blue-500 hover:underline group"
-                >
-                  <span>Go to chapter</span>
-                  <BookOpen size={18} className="ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-                </a>
-              </div>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-export default EducationRepository;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Repository</title>
+    <script type="text/javascript">
+        // Single Page Apps for GitHub Pages
+        // https://github.com/rafrex/spa-github-pages
+        // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+        // ----------------------------------------------------------------------
+        // This script checks to see if a redirect is present in the query string
+        // and converts it back into the correct url and adds it to the
+        // browser's history using window.history.replaceState(...),
+        // which won't cause the browser to attempt to load the new url.
+        // When the single page app is loaded further down in this file,
+        // the correct url will be waiting in the browser's history for
+        // the single page app to route accordingly.
+        (function(l) {
+            if (l.search) {
+                var q = {};
+                l.search.slice(1).split('&').forEach(function(v) {
+                    var a = v.split('=');
+                    q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+                });
+                if (q.p !== undefined) {
+                    window.history.replaceState(null, null,
+                        l.pathname.slice(0, -1) + (q.p || '') +
+                        (q.q ? ('?' + q.q) : '') +
+                        l.hash
+                    );
+                }
+            }
+        }(window.location))
+    </script>
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+        // Single Page Apps for GitHub Pages
+        // https://github.com/rafrex/spa-github-pages
+        // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+        // ----------------------------------------------------------------------
+        // This script checks to see if a redirect is present in the query string,
+        // converts it back into the correct url and adds it to the
+        // browser's history using window.history.replaceState(...),
+        // which won't cause the browser to attempt to load the new url.
+        // When the single page app is loaded further down in this file,
+        // the correct url will be waiting in the browser's history for
+        // the single page app to route accordingly.
+        (function(l) {
+            if (l.search[1] === '/' ) {
+                var decoded = l.search.slice(1).split('&').map(function(s) { 
+                    return s.replace(/~and~/g, '&')
+                }).join('?');
+                window.history.replaceState(null, null,
+                    l.pathname.slice(0, -1) + decoded + l.hash
+                );
+            }
+        }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        // Redirect to the actual index.html in the build folder
+        window.location.href = 'build/index.html' + window.location.search + window.location.hash;
+    </script>
+</body>
+</html>
