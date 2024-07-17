@@ -20,6 +20,13 @@
       font-family: 'Lobster', cursive;
       font-size: 3em;
       color: #333;
+      text-align: center;
+    }
+    h2 {
+      font-size: 2em;
+      margin-top: 20px;
+      color: #444;
+      text-align: center;
     }
     .container {
       max-width: 800px;
@@ -32,16 +39,12 @@
     p {
       font-size: 1.2em;
       line-height: 1.6;
-    }
-    h2 {
-      font-size: 2em;
-      margin-top: 20px;
-      color: #444;
+      text-align: center;
     }
     .btn {
-      display: block;
-      width: 100%;
-      margin: 10px 0;
+      display: inline-block;
+      width: 200px;
+      margin: 10px 10px;
       padding: 15px;
       font-size: 1.2em;
       font-weight: bold;
@@ -56,6 +59,11 @@
     .btn:hover {
       background-color: #0056b3;
     }
+    .btn-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   </style>
 </head>
 <body>
@@ -65,39 +73,45 @@
   </header>
   <div class="container">
     <h2>Languages</h2>
-    <a href="Languages/Chapter-1/index.html" class="btn">Rust</a>
-    <a href="Languages/Chapter-2/index.html" class="btn">Ruby</a>
-    <a href="Languages/Chapter-3/index.html" class="btn">Kotlin</a>
-    <a href="Languages/Chapter-4/index.html" class="btn">Swift</a>
-    <a href="Languages/Chapter-5/index.html" class="btn">Go</a>
-    <a href="Languages/Chapter-6/index.html" class="btn">C++</a>
-    <a href="Languages/Chapter-7/index.html" class="btn">CSS</a>
-    <a href="Languages/Chapter-8/index.html" class="btn">Lua</a>
-    <a href="Languages/Chapter-9/index.html" class="btn">C#</a>
-    <a href="Languages/Chapter-10/index.html" class="btn">Java</a>
-    <a href="Languages/Chapter-11/index.html" class="btn">JavaScript</a>
-    <a href="Languages/Chapter-12/index.html" class="btn">Python</a>
+    <div class="btn-container">
+      <a href="Languages/Chapter-1/index.html" class="btn">Rust</a>
+      <a href="Languages/Chapter-2/index.html" class="btn">Ruby</a>
+      <a href="Languages/Chapter-3/index.html" class="btn">Kotlin</a>
+      <a href="Languages/Chapter-4/index.html" class="btn">Swift</a>
+      <a href="Languages/Chapter-5/index.html" class="btn">Go</a>
+      <a href="Languages/Chapter-6/index.html" class="btn">C++</a>
+      <a href="Languages/Chapter-7/index.html" class="btn">CSS</a>
+      <a href="Languages/Chapter-8/index.html" class="btn">Lua</a>
+      <a href="Languages/Chapter-9/index.html" class="btn">C#</a>
+      <a href="Languages/Chapter-10/index.html" class="btn">Java</a>
+      <a href="Languages/Chapter-11/index.html" class="btn">JavaScript</a>
+      <a href="Languages/Chapter-12/index.html" class="btn">Python</a>
+    </div>
     <h2>Tools</h2>
-    <a href="Tools/01_Introduction_to_Tools/index.html" class="btn">Introduction to Tools</a>
-    <a href="Tools/02_Docker/index.html" class="btn">Docker</a>
-    <a href="Tools/03_Git/index.html" class="btn">Git</a>
-    <a href="Tools/04_VSCode/index.html" class="btn">VSCode</a>
-    <a href="Tools/05_Jenkins/index.html" class="btn">Jenkins</a>
-    <a href="Tools/06_Kubernetes/index.html" class="btn">Kubernetes</a>
-    <a href="Tools/07_Terraform/index.html" class="btn">Terraform</a>
-    <a href="Tools/08_OpenWebUI/index.html" class="btn">OpenWebUI</a>
-    <a href="Tools/09_AnythingLLM/index.html" class="btn">AnythingLLM</a>
-    <a href="Tools/10_Postman/index.html" class="btn">Postman</a>
+    <div class="btn-container">
+      <a href="Tools/01_Introduction_to_Tools/index.html" class="btn">Introduction to Tools</a>
+      <a href="Tools/02_Docker/index.html" class="btn">Docker</a>
+      <a href="Tools/03_Git/index.html" class="btn">Git</a>
+      <a href="Tools/04_VSCode/index.html" class="btn">VSCode</a>
+      <a href="Tools/05_Jenkins/index.html" class="btn">Jenkins</a>
+      <a href="Tools/06_Kubernetes/index.html" class="btn">Kubernetes</a>
+      <a href="Tools/07_Terraform/index.html" class="btn">Terraform</a>
+      <a href="Tools/08_OpenWebUI/index.html" class="btn">OpenWebUI</a>
+      <a href="Tools/09_AnythingLLM/index.html" class="btn">AnythingLLM</a>
+      <a href="Tools/10_Postman/index.html" class="btn">Postman</a>
+    </div>
     <h2>APIs</h2>
-    <a href="API/01_CoinAPI/index.html" class="btn">CoinAPI</a>
-    <a href="API/02_Etherscan/index.html" class="btn">Etherscan API</a>
-    <a href="API/03_Blockchain/index.html" class="btn">Blockchain.com API</a>
-    <a href="API/04_CoinGecko/index.html" class="btn">CoinGecko API</a>
-    <a href="API/05_Nomics/index.html" class="btn">Nomics API</a>
-    <a href="API/06_FacebookGraph/index.html" class="btn">Facebook Graph API</a>
-    <a href="API/07_InstagramGraph/index.html" class="btn">Instagram Graph API</a>
-    <a href="API/08_TensorFlowServing/index.html" class="btn">TensorFlow Serving</a>
-    <a href="API/09_HuggingFace/index.html" class="btn">Hugging Face Transformers</a>
+    <div class="btn-container">
+      <a href="https://www.coinapi.io/" class="btn">CoinAPI</a>
+      <a href="https://etherscan.io/apis" class="btn">Etherscan API</a>
+      <a href="https://www.blockchain.com/api" class="btn">Blockchain.com API</a>
+      <a href="https://www.coingecko.com/en/api" class="btn">CoinGecko API</a>
+      <a href="https://nomics.com/docs/" class="btn">Nomics API</a>
+      <a href="https://developers.facebook.com/docs/graph-api" class="btn">Facebook Graph API</a>
+      <a href="https://developers.facebook.com/docs/instagram-api" class="btn">Instagram Graph API</a>
+      <a href="https://www.tensorflow.org/tfx/guide/serving" class="btn">TensorFlow Serving</a>
+      <a href="https://huggingface.co/transformers/" class="btn">Hugging Face Transformers</a>
+    </div>
   </div>
 </body>
 </html>
