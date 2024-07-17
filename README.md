@@ -17,7 +17,7 @@
 ---
   
 
-<h2 align="center">Languages</h2>
+<h1 align="center">Languages</h1>
 <p align="center">
   <a href="Languages/Chapter-1/index.html"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
   <a href="Languages/Chapter-2/index.html"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"></a>
@@ -93,7 +93,7 @@
 
 ---
 
-<h3 align="center">Contributions</h3>
+<h4 align="center">Contributions</h4>
 <p align="center">
   Contributions, issues, and feature requests are welcome!<br>
   Give a ⭐️ if you like this project!
@@ -101,14 +101,14 @@
 
 ---
 
-<h3 align="center">📜 License</h3>
+<h4 align="center">📜 License</h4>
 <p align="center">
   This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.
 </p>
 
 ---
 
-<h3 align="center">Original repository created by</h3>
+<h4 align="center">Original repository created by</h4>
 <p align="center">
   <strong>Thomas Mathes</strong><br>
   <a href="https://github.com/TMHSDigital"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"></a>
