@@ -30,7 +30,6 @@
 
 ---
 
-### 🛠️ Tools
 <p align="center">
   <a href="Tools/01_Introduction_to_Tools/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="Introduction to Tools" width="40" height="40" /></a>
   <a href="Tools/02_Docker/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="40" height="40" /></a>
