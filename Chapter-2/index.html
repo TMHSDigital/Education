@@ -70,6 +70,12 @@
     .btn:hover {
       background-color: #0056b3;
     }
+    .resource-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -84,19 +90,18 @@
       <a href="#advanced">Advanced Topics</a>
     </nav>
     <section id="intro">
-      
-<h2>Introduction to JavaScript</h2>
-<p>JavaScript is a powerful, flexible, and fast programming language used for web development.</p>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="btn">Learn More</a>
-
+      <h2>Introduction to JavaScript</h2>
+      <p>JavaScript is a powerful, flexible, and fast programming language used for web development.</p>
+      <pre><code class="language-javascript">console.log("Hello, World!");</code></pre>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="btn">Learn More</a>
     </section>
     <section id="getting-started">
       <h2>Getting Started</h2>
       <p>To get started with JavaScript, follow the steps below:</p>
       <ul>
-        <li>Step 1: Install JavaScript</li>
-        <li>Step 2: Set up your development environment</li>
-        <li>Step 3: Write your first JavaScript program</li>
+        <li>Step 1: Learn the basics of HTML and CSS.</li>
+        <li>Step 2: Use your browser's developer tools to experiment with JavaScript code.</li>
+        <li>Step 3: Write your first JavaScript program in a file with a `.js` extension and include it in an HTML file using the <code>&lt;script&gt;</code> tag.</li>
       </ul>
     </section>
     <section id="advanced">
@@ -107,6 +112,17 @@
         <li>Topic 2: JavaScript libraries and frameworks</li>
         <li>Topic 3: Best practices and design patterns in JavaScript</li>
       </ul>
+    </section>
+    <section id="resources">
+      <h2>JavaScript Resources</h2>
+      <div class="resource-buttons">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="btn">MDN Web Docs</a>
+        <a href="https://javascript.info/" target="_blank" class="btn">JavaScript.info</a>
+        <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank" class="btn">FreeCodeCamp</a>
+        <a href="https://stackoverflow.com/questions/tagged/javascript" target="_blank" class="btn">Stack Overflow</a>
+        <a href="https://www.npmjs.com/" target="_blank" class="btn">npm (Node Package Manager)</a>
+        <a href="https://github.com/javascript" target="_blank" class="btn">JavaScript on GitHub</a>
+      </div>
     </section>
   </div>
 </body>
