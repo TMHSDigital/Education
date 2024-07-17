@@ -1,3 +1,4 @@
+``````
 Chapter-1/
   ├── 01_Introduction_to_Python/
   ├── 02_Python_Installation_and_Setup/
@@ -8,7 +9,7 @@ Chapter-1/
   ├── 07_Input_and_Output/
   ├── 08_Error_Handling/
   ├── 09_Basic_Python_Libraries/
-
+``````
 # Demo Python Scripts
 
 This repository contains two Python scripts: one for basic data analysis and visualization, and another to demonstrate the power and versatility of Python through web scraping, data manipulation, and data visualization.
