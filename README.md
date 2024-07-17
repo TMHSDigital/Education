@@ -61,11 +61,13 @@
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=TMHSDigital&show_icons=true&theme=radical" alt="GitHub Stats">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TMHSDigital&layout=compact&theme=radical" alt="Top Languages">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TMHSDigital&theme=radical" alt="Repositories Per Language">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TMHSDigital&theme=radical" alt="Most Commit Language">
 </p>
 
 ## 🐍 Contribution Graph Snake
 <p align="center">
-  <img src="https://github.com/TMHSDigital/TMHSDigital/blob/output/github-contribution-grid-snake.svg" alt="Contribution Graph Snake">
+  <img src="https://github.com/TMHSDigital/TMHSDigital/raw/output/github-contribution-grid-snake.svg" alt="Contribution Graph Snake">
 </p>
 
 ## 🎉 Contributions and Support
