@@ -30,29 +30,29 @@
 
 ### 🛠️ Tools
 <p align="center">
-  <a href="Tools/01_Introduction_to_Tools/index.html">Introduction to Tools</a> |
-  <a href="Tools/02_Docker/index.html">Docker</a> |
-  <a href="Tools/03_Git/index.html">Git</a> |
-  <a href="Tools/04_VSCode/index.html">VSCode</a> |
-  <a href="Tools/05_Jenkins/index.html">Jenkins</a> |
-  <a href="Tools/06_Kubernetes/index.html">Kubernetes</a> |
-  <a href="Tools/07_Terraform/index.html">Terraform</a> |
-  <a href="Tools/08_OpenWebUI/index.html">OpenWebUI</a> |
-  <a href="Tools/09_AnythingLLM/index.html">AnythingLLM</a> |
-  <a href="Tools/10_Postman/index.html">Postman</a>
+  <a href="Tools/01_Introduction_to_Tools/index.html"><img src="https://img.shields.io/badge/Introduction%20to%20Tools-007ACC?style=for-the-badge&logo=knowledge&logoColor=white" alt="Introduction to Tools"></a>
+  <a href="Tools/02_Docker/index.html"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"></a>
+  <a href="Tools/03_Git/index.html"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"></a>
+  <a href="Tools/04_VSCode/index.html"><img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VSCode"></a>
+  <a href="Tools/05_Jenkins/index.html"><img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins"></a>
+  <a href="Tools/06_Kubernetes/index.html"><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes"></a>
+  <a href="Tools/07_Terraform/index.html"><img src="https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform"></a>
+  <a href="Tools/08_OpenWebUI/index.html"><img src="https://img.shields.io/badge/OpenWebUI-3E3E3E?style=for-the-badge&logo=web&logoColor=white" alt="OpenWebUI"></a>
+  <a href="Tools/09_AnythingLLM/index.html"><img src="https://img.shields.io/badge/AnythingLLM-FF6F00?style=for-the-badge&logo=anything&logoColor=white" alt="AnythingLLM"></a>
+  <a href="Tools/10_Postman/index.html"><img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman"></a>
 </p>
 
 ### 📡 APIs
 <p align="center">
-  <a href="https://www.coinapi.io/">CoinAPI</a> |
-  <a href="https://etherscan.io/apis">Etherscan API</a> |
-  <a href="https://www.blockchain.com/api">Blockchain.com API</a> |
-  <a href="https://www.coingecko.com/en/api">CoinGecko API</a> |
-  <a href="https://nomics.com/docs/">Nomics API</a> |
-  <a href="https://developers.facebook.com/docs/graph-api">Facebook Graph API</a> |
-  <a href="https://developers.facebook.com/docs/instagram-api">Instagram Graph API</a> |
-  <a href="https://www.tensorflow.org/tfx/guide/serving">TensorFlow Serving</a> |
-  <a href="https://huggingface.co/transformers/">Hugging Face Transformers</a>
+  <a href="https://www.coinapi.io/"><img src="https://img.shields.io/badge/CoinAPI-32A852?style=for-the-badge&logo=coinapi&logoColor=white" alt="CoinAPI"></a>
+  <a href="https://etherscan.io/apis"><img src="https://img.shields.io/badge/Etherscan%20API-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white" alt="Etherscan API"></a>
+  <a href="https://www.blockchain.com/api"><img src="https://img.shields.io/badge/Blockchain.com%20API-F7931A?style=for-the-badge&logo=bitcoin&logoColor=white" alt="Blockchain.com API"></a>
+  <a href="https://www.coingecko.com/en/api"><img src="https://img.shields.io/badge/CoinGecko%20API-FFCE45?style=for-the-badge&logo=coingecko&logoColor=black" alt="CoinGecko API"></a>
+  <a href="https://nomics.com/docs/"><img src="https://img.shields.io/badge/Nomics%20API-3C3C3D?style=for-the-badge&logo=api&logoColor=white" alt="Nomics API"></a>
+  <a href="https://developers.facebook.com/docs/graph-api"><img src="https://img.shields.io/badge/Facebook%20Graph%20API-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook Graph API"></a>
+  <a href="https://developers.facebook.com/docs/instagram-api"><img src="https://img.shields.io/badge/Instagram%20Graph%20API-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Graph API"></a>
+  <a href="https://www.tensorflow.org/tfx/guide/serving"><img src="https://img.shields.io/badge/TensorFlow%20Serving-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow Serving"></a>
+  <a href="https://huggingface.co/transformers/"><img src="https://img.shields.io/badge/Hugging%20Face%20Transformers-FFD700?style=for-the-badge&logo=hugging-face&logoColor=white" alt="Hugging Face Transformers"></a>
 </p>
 
 ---
