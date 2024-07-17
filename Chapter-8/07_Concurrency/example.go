@@ -38,4 +38,3 @@ func sum(s []int, c chan int) {
     }
     c <- sum
 }
-

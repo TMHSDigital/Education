@@ -6,6 +6,7 @@ import "fmt"
 
 // Defining Functions
 func greet(name string) {
+    fmt.Println("Hello, " + name + "!")
 }
 
 // Function Arguments
@@ -26,6 +27,7 @@ func main() {
     fmt.Println(result)
 
     greet := func(name string) {
+        fmt.Println("Hello, " + name + "!")
     }
 
     greet("John")
@@ -41,4 +43,3 @@ func main() {
 
     fmt.Println(apply(increment, 5))
 }
-

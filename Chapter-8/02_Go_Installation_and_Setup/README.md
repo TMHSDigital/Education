@@ -30,4 +30,3 @@ export PATH=$PATH:/usr/local/go/bin
 
 1. Download and install VSCode from [code.visualstudio.com](https://code.visualstudio.com/).
 2. Install the Go extension from the Extensions marketplace.
-

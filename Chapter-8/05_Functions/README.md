@@ -10,6 +10,7 @@ package main
 import "fmt"
 
 func greet(name string) {
+    fmt.Println("Hello, " + name + "!")
 }
 
 func main() {
@@ -59,6 +60,7 @@ import "fmt"
 
 func main() {
     greet := func(name string) {
+        fmt.Println("Hello, " + name + "!")
     }
 
     greet("John")
@@ -84,4 +86,3 @@ func main() {
     fmt.Println(apply(increment, 5))
 }
 ```
-

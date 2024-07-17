@@ -33,4 +33,3 @@ func main() {
         break // Just to prevent an actual infinite loop in this example
     }
 }
-

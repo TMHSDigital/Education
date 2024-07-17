@@ -44,7 +44,7 @@ func main() {
     }()
 
     fmt.Println("Starting the program...")
+    panic("A severe error occurred!")
     fmt.Println("This will not be printed.")
 }
 ```
-

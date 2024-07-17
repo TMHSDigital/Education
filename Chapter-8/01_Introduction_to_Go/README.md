@@ -18,4 +18,3 @@ Go, also known as Golang, is a statically typed, compiled programming language d
 - Cloud services
 - DevOps tools
 - Microservices
-

@@ -37,5 +37,5 @@ func main() {
     This is a
     multiline comment
     */
+    fmt.Println("Hello, Go!")
 }
-

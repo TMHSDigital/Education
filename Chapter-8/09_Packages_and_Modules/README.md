@@ -12,6 +12,7 @@ import "fmt"
 
 // Hello returns a greeting for the named person.
 func Hello(name string) string {
+    message := fmt.Sprintf("Hi, %v. Welcome!", name)
     return message
 }
 ```
@@ -41,4 +42,3 @@ Go modules are used to manage dependencies in Go projects.
 go mod init your_project
 go get example.com/some/package
 ```
-
