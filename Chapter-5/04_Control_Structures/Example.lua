@@ -21,3 +21,10 @@ while count < 5 do
     count = count + 1
 end
 
+-- Example of Repeat-Until Loop
+count = 0
+repeat
+    print(count)
+    count = count + 1
+until count == 5
+

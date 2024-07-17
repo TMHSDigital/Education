@@ -1,5 +1,7 @@
 # Control Structures
 
+Lua supports standard control structures such as if statements and loops.
+
 ## Conditional Statements
 
 ```lua
@@ -31,5 +33,15 @@ while count < 5 do
     print(count)
     count = count + 1
 end
+```
+
+### Repeat-Until Loop
+
+```lua
+count = 0
+repeat
+    print(count)
+    count = count + 1
+until count == 5
 ```
 
