@@ -32,18 +32,24 @@
     .chapter-list {
       list-style: none;
       padding: 0;
+      text-align: center;
     }
     .chapter-list li {
       margin: 10px 0;
     }
-    .chapter-list a {
-      text-decoration: none;
-      color: #007BFF;
+    .chapter-list button {
+      font-family: 'Roboto', sans-serif;
       font-weight: bold;
       font-size: 1.2em;
+      padding: 10px 20px;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    .chapter-list a:hover {
-      text-decoration: underline;
+    .chapter-list button:hover {
+      background-color: #0056b3;
     }
   </style>
 </head>
@@ -54,17 +60,18 @@
   </header>
   <div class="container">
     <ul class="chapter-list">
-      <li><a href="Chapter-1/index.html">Chapter 1: Introduction to Tools</a></li>
-      <li><a href="Chapter-2/index.html">Chapter 2: Docker</a></li>
-      <li><a href="Chapter-3/index.html">Chapter 3: Git</a></li>
-      <li><a href="Chapter-4/index.html">Chapter 4: VSCode</a></li>
-      <li><a href="Chapter-5/index.html">Chapter 5: Jenkins</a></li>
-      <li><a href="Chapter-6/index.html">Chapter 6: Kubernetes</a></li>
-      <li><a href="Chapter-7/index.html">Chapter 7: Terraform</a></li>
-      <li><a href="Chapter-8/index.html">Chapter 8: OpenWebUI</a></li>
-      <li><a href="Chapter-9/index.html">Chapter 9: AnythingLLM</a></li>
-      <li><a href="Chapter-10/index.html">Chapter 10: Postman</a></li>
-      <!-- Add more chapters as needed -->
+      <li><button onclick="location.href='Chapter-12/index.html'">Rust</button></li>
+      <li><button onclick="location.href='Chapter-10/index.html'">Ruby</button></li>
+      <li><button onclick="location.href='Chapter-11/index.html'">Kotlin</button></li>
+      <li><button onclick="location.href='Chapter-9/index.html'">Swift</button></li>
+      <li><button onclick="location.href='Chapter-8/index.html'">Go</button></li>
+      <li><button onclick="location.href='Chapter-7/index.html'">C++</button></li>
+      <li><button onclick="location.href='Chapter-6/index.html'">CSS</button></li>
+      <li><button onclick="location.href='Chapter-5/index.html'">Lua</button></li>
+      <li><button onclick="location.href='Chapter-4/index.html'">C#</button></li>
+      <li><button onclick="location.href='Chapter-3/index.html'">Java</button></li>
+      <li><button onclick="location.href='Chapter-2/index.html'">JavaScript</button></li>
+      <li><button onclick="location.href='Chapter-1/index.html'">Python</button></li>
     </ul>
   </div>
 </body>
