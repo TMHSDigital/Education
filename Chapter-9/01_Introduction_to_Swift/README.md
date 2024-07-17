@@ -16,4 +16,3 @@ Swift is a powerful and intuitive programming language developed by Apple for iO
 - macOS applications
 - watchOS applications
 - tvOS applications
-
