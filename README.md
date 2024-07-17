@@ -28,28 +28,31 @@
   <a href="Languages/Chapter-12/index.html"><img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin"></a>
 </p>
 
-## 📈 GitHub Stats
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TMHSDigital&show_icons=true&theme=radical" alt="GitHub Stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TMHSDigital&layout=compact&theme=radical" alt="Top Languages">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TMHSDigital&theme=radical" alt="Repositories Per Language">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TMHSDigital&theme=radical" alt="Most Commit Language">
-</p>
+Here's the enhanced version of the `README.md`, incorporating DevIcon icons and other relevant metrics. I'll only provide the full code for the sections that are modified:
 
-## 🛠️ Tools
+---
+
+### 🛠️ Tools
+
+```markdown
+### 🛠️ Tools
 <p align="center">
-  <a href="Tools/01_Introduction_to_Tools/index.html"><img src="https://img.shields.io/badge/Introduction_to_Tools-007ACC?style=for-the-badge&logo=knowledge&logoColor=white" alt="Introduction to Tools"></a>
-  <a href="Tools/02_Docker/index.html"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"></a>
-  <a href="Tools/03_Git/index.html"><img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"></a>
-  <a href="Tools/04_VSCode/index.html"><img src="https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VSCode"></a>
-  <a href="Tools/05_Jenkins/index.html"><img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins"></a>
-  <a href="Tools/06_Kubernetes/index.html"><img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes"></a>
-  <a href="Tools/07_Terraform/index.html"><img src="https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform"></a>
+  <a href="Tools/01_Introduction_to_Tools/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="Introduction to Tools" width="40" height="40" /></a>
+  <a href="Tools/02_Docker/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="40" height="40" /></a>
+  <a href="Tools/03_Git/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="40" height="40" /></a>
+  <a href="Tools/04_VSCode/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode" width="40" height="40" /></a>
+  <a href="Tools/05_Jenkins/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins" width="40" height="40" /></a>
+  <a href="Tools/06_Kubernetes/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" width="40" height="40" /></a>
+  <a href="Tools/07_Terraform/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" alt="Terraform" width="40" height="40" /></a>
   <a href="Tools/08_OpenWebUI/index.html"><img src="https://img.shields.io/badge/OpenWebUI-3E3E3E?style=for-the-badge&logo=web&logoColor=white" alt="OpenWebUI"></a>
   <a href="Tools/09_AnythingLLM/index.html"><img src="https://img.shields.io/badge/AnythingLLM-FF6F00?style=for-the-badge&logo=anything&logoColor=white" alt="AnythingLLM"></a>
-  <a href="Tools/10_Postman/index.html"><img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman"></a>
+  <a href="Tools/10_Postman/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" width="40" height="40" /></a>
 </p>
+```
 
+### 📡 APIs
+
+```markdown
 ### 📡 APIs
 <p align="center">
   <a href="https://www.coinapi.io/"><img src="https://img.shields.io/badge/CoinAPI-32A852?style=for-the-badge&logo=coinapi&logoColor=white" alt="CoinAPI"></a>
@@ -62,22 +65,56 @@
   <a href="https://www.tensorflow.org/tfx/guide/serving"><img src="https://img.shields.io/badge/TensorFlow_Serving-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow Serving"></a>
   <a href="https://huggingface.co/transformers/"><img src="https://img.shields.io/badge/Hugging_Face_Transformers-FFD700?style=for-the-badge&logo=hugging-face&logoColor=white" alt="Hugging Face Transformers"></a>
 </p>
+```
 
+### 📈 GitHub Stats
+
+```markdown
+## 📈 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=TMHSDigital&show_icons=true&theme=radical" alt="GitHub Stats">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TMHSDigital&layout=compact&theme=radical" alt="Top Languages">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TMHSDigital&theme=radical" alt="Repositories Per Language">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TMHSDigital&theme=radical" alt="Most Commit Language">
+</p>
+```
+
+### 🐍 Contribution Graph Snake
+
+```markdown
+## 🐍 Contribution Graph Snake
+<p align="center">
+  <img src="https://github.com/TMHSDigital/TMHSDigital/raw/output/github-contribution-grid-snake.svg" alt="Contribution Graph Snake">
+</p>
+```
+
+### 🎉 Contributions and Support
+
+```markdown
 ## 🎉 Contributions and Support
 <p align="center">
   Contributions, issues, and feature requests are welcome!<br>
   Give a ⭐️ if you like this project!
 </p>
+```
 
+### 📜 License
+
+```markdown
 ## 📜 License
 <p align="center">
   This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.
 </p>
+```
+
+### ✍️ Author
 
 ## ✍️ Author
 <p align="center">
   <strong>Thomas Mathes</strong><br>
   <a href="https://github.com/TMHSDigital"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"></a>
-  <a href="mailto:thomas@tmhsdigital.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   <a href="https://www.linkedin.com/in/thomasmathes/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
+```
+
+---
