@@ -66,25 +66,20 @@
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TMHSDigital&theme=radical" alt="Most Commit Language">
 </p>
 
-## 🐍 Contribution Graph Snake
-<p align="center">
-  <img src="https://github.com/TMHSDigital/TMHSDigital/raw/output/github-contribution-grid-snake.svg" alt="Contribution Graph Snake">
-</p>
-
 ## 🎉 Contributions and Support
 <p align="center">
   Contributions, issues, and feature requests are welcome!<br>
   Give a ⭐️ if you like this project!
 </p>
 
-### 📜 License
+---
 
 ## 📜 License
 <p align="center">
   This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.
 </p>
 
-### ✍️ Author
+---
 
 ## ✍️ Author
 <p align="center">
@@ -92,6 +87,5 @@
   <a href="https://github.com/TMHSDigital"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"></a>
   <a href="https://www.linkedin.com/in/thomasmathes/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
 </p>
-```
 
----
+===
