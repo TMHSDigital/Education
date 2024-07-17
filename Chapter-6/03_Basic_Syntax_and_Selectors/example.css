@@ -1,0 +1,18 @@
+/* example.css */
+
+h1 {
+  color: blue;
+}
+
+.intro {
+  font-size: 20px;
+}
+
+#header {
+  background-color: yellow;
+}
+
+a[target] {
+  color: green;
+}
+
