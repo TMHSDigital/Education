@@ -42,6 +42,34 @@
       list-style-type: disc;
       padding-left: 20px;
     }
+    nav {
+      margin-bottom: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
   </style>
 </head>
 <body>
@@ -49,22 +77,35 @@
     <h1>Swift</h1>
   </header>
   <div class="container">
-    <h2>Introduction</h2>
-    <p>Welcome to the Swift chapter. Here you will learn the basics and advanced concepts of Swift.</p>
-    <h2>Getting Started</h2>
-    <p>To get started with Swift, follow the steps below:</p>
-    <ul>
-      <li>Step 1: Install Swift</li>
-      <li>Step 2: Set up your development environment</li>
-      <li>Step 3: Write your first Swift program</li>
-    </ul>
-    <h2>Advanced Topics</h2>
-    <p>Once you are comfortable with the basics, you can move on to more advanced topics:</p>
-    <ul>
-      <li>Topic 1: Advanced Swift syntax</li>
-      <li>Topic 2: Swift libraries and frameworks</li>
-      <li>Topic 3: Best practices and design patterns in Swift</li>
-    </ul>
+    <nav>
+      <a href="/Education/index.html">Home</a>
+      <a href="#intro">Introduction</a>
+      <a href="#getting-started">Getting Started</a>
+      <a href="#advanced">Advanced Topics</a>
+    </nav>
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>Welcome to the Swift chapter. Here you will learn the basics and advanced concepts of Swift.</p>
+      <button class="btn" onclick="alert('Welcome to Swift!')">Click Me!</button>
+    </section>
+    <section id="getting-started">
+      <h2>Getting Started</h2>
+      <p>To get started with Swift, follow the steps below:</p>
+      <ul>
+        <li>Step 1: Install Swift</li>
+        <li>Step 2: Set up your development environment</li>
+        <li>Step 3: Write your first Swift program</li>
+      </ul>
+    </section>
+    <section id="advanced">
+      <h2>Advanced Topics</h2>
+      <p>Once you are comfortable with the basics, you can move on to more advanced topics:</p>
+      <ul>
+        <li>Topic 1: Advanced Swift syntax</li>
+        <li>Topic 2: Swift libraries and frameworks</li>
+        <li>Topic 3: Best practices and design patterns in Swift</li>
+      </ul>
+    </section>
   </div>
 </body>
 </html>
