@@ -7,6 +7,8 @@ This repository contains educational materials for various programming languages
 ![GitHub last commit](https://img.shields.io/github/last-commit/TMHSDigital/Education)
 ![GitHub languages count](https://img.shields.io/github/languages/count/TMHSDigital/Education)
 
+---
+
 ## Table of Contents
 
 ### Chapter 1: ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
