@@ -63,11 +63,6 @@
   <a href="https://huggingface.co/transformers/"><img src="https://img.shields.io/badge/Hugging_Face_Transformers-FFD700?style=for-the-badge&logo=hugging-face&logoColor=white" alt="Hugging Face Transformers"></a>
 </p>
 
-## 🐍 Contribution Graph Snake
-<p align="center">
-  <img src="https://github.com/TMHSDigital/TMHSDigital/raw/output/github-contribution-grid-snake.svg" alt="Contribution Graph Snake">
-</p>
-
 ## 🎉 Contributions and Support
 <p align="center">
   Contributions, issues, and feature requests are welcome!<br>
