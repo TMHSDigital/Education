@@ -56,7 +56,6 @@
   <a href="https://www.tensorflow.org/tfx/guide/serving"><img src="https://img.shields.io/badge/TensorFlow_Serving-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow Serving"></a>
   <a href="https://huggingface.co/transformers/"><img src="https://img.shields.io/badge/Hugging_Face_Transformers-FFD700?style=for-the-badge&logo=hugging-face&logoColor=white" alt="Hugging Face Transformers"></a>
 </p>
-```
 
 ## 📈 GitHub Stats
 <p align="center">
