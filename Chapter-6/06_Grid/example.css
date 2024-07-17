@@ -1,0 +1,13 @@
+/* example.css */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}

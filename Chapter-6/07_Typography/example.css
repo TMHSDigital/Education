@@ -1,0 +1,14 @@
+/* example.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+}

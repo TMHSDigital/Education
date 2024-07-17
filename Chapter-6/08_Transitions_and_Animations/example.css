@@ -1,0 +1,22 @@
+/* example.css */
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transition: background-color 2s;
+}
+
+.box:hover {
+  background-color: red;
+}
+
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+.box {
+  animation-name: example;
+  animation-duration: 4s;
+}
