@@ -1,291 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Educational Repository</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    h1 {
-      font-family: 'Lobster', cursive;
-      font-size: 3em;
-      color: #333;
-      text-align: center;
-    }
-    h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2em;
-      margin-top: 20px;
-      color: #444;
-      text-align: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    p {
-      font-size: 1.2em;
-      line-height: 1.6;
-      text-align: center;
-    }
-    .btn {
-      display: inline-block;
-      width: 200px;
-      margin: 10px 10px;
-      padding: 15px;
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #fff;
-      background-color: #007BFF;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-align: center;
-      text-decoration: none;
-    }
-    .btn:hover {
-      background-color: #0056b3;
-    }
-    .btn-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .icon-section {
-      margin-bottom: 30px;
-    }
-    .icon-section h2 {
-      text-align: center;
-    }
-    .icon-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .icon-item {
-      margin: 10px;
-      text-align: center;
-    }
-    .icon-item i {
-      font-size: 48px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Repository</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .icon-section {
+            margin-top: 40px;
+        }
+        .icon-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .icon-item {
+            font-size: 48px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Educational Repository</h1>
-    <p>Explore the chapters and learn various programming languages, tools, and APIs.</p>
-  </header>
-  <div class="container">
-    <h2>Languages</h2>
-    <div class="btn-container">
-      <a href="Languages/Chapter-1/index.html" class="btn">Rust</a>
-      <a href="Languages/Chapter-2/index.html" class="btn">Ruby</a>
-      <a href="Languages/Chapter-3/index.html" class="btn">Kotlin</a>
-      <a href="Languages/Chapter-4/index.html" class="btn">Swift</a>
-      <a href="Languages/Chapter-5/index.html" class="btn">Go</a>
-      <a href="Languages/Chapter-6/index.html" class="btn">C++</a>
-      <a href="Languages/Chapter-7/index.html" class="btn">CSS</a>
-      <a href="Languages/Chapter-8/index.html" class="btn">Lua</a>
-      <a href="Languages/Chapter-9/index.html" class="btn">C#</a>
-      <a href="Languages/Chapter-10/index.html" class="btn">Java</a>
-      <a href="Languages/Chapter-11/index.html" class="btn">JavaScript</a>
-      <a href="Languages/Chapter-12/index.html" class="btn">Python</a>
-    </div>
-    <h2>Tools</h2>
-    <div class="btn-container">
-      <a href="https://www.docker.com/" class="btn">Docker</a>
-      <a href="https://git-scm.com/" class="btn">Git</a>
-      <a href="https://code.visualstudio.com/" class="btn">VSCode</a>
-      <a href="https://www.jenkins.io/" class="btn">Jenkins</a>
-      <a href="https://kubernetes.io/" class="btn">Kubernetes</a>
-      <a href="https://www.terraform.io/" class="btn">Terraform</a>
-      <a href="https://openwebui.github.io/" class="btn">OpenWebUI</a>
-      <a href="https://github.com/Mintplex-Labs/anything-llm" class="btn">AnythingLLM</a>
-      <a href="https://www.postman.com/" class="btn">Postman</a>
-    </div>
-    <h2>APIs</h2>
-    <div class="btn-container">
-      <a href="https://www.coinapi.io/" class="btn">CoinAPI</a>
-      <a href="https://etherscan.io/apis" class="btn">Etherscan API</a>
-      <a href="https://www.blockchain.com/api" class="btn">Blockchain.com API</a>
-      <a href="https://www.coingecko.com/en/api" class="btn">CoinGecko API</a>
-      <a href="https://nomics.com/docs/" class="btn">Nomics API</a>
-      <a href="https://developers.facebook.com/docs/graph-api" class="btn">Facebook Graph API</a>
-      <a href="https://developers.facebook.com/docs/instagram-api" class="btn">Instagram Graph API</a>
-      <a href="https://www.tensorflow.org/tfx/guide/serving" class="btn">TensorFlow Serving</a>
-      <a href="https://huggingface.co/transformers/" class="btn">Hugging Face Transformers</a>
-    </div>
-  </div>
+    <div class="container">
+        <h1>Educational Repository</h1>
+        <p>Explore the chapters and learn various programming languages, tools, and APIs.</p>
 
-  <!-- Devicon Icons Section -->
-  <div class="container icon-section">
-    <h2>Main Technologies Used</h2>
-    <div class="icon-list">
-      <!-- Programming Languages -->
-      <div class="icon-item">
-        <i class="devicon-python-plain"></i>
-        <p>Python</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-javascript-plain"></i>
-        <p>JavaScript</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-java-plain"></i>
-        <p>Java</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-html5-plain"></i>
-        <p>HTML5</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-css3-plain"></i>
-        <p>CSS3</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-cplusplus-plain"></i>
-        <p>C++</p>
-      </div>
-      <!-- Libraries & Frameworks -->
-      <div class="icon-item">
-        <i class="devicon-flask-original"></i>
-        <p>Flask</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-react-original"></i>
-        <p>React</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-nodejs-plain"></i>
-        <p>Node.js</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-django-plain"></i>
-        <p>Django</p>
-      </div>
-      <!-- Tools & Platforms -->
-      <div class="icon-item">
-        <i class="devicon-docker-plain"></i>
-        <p>Docker</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-git-plain"></i>
-        <p>Git</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-github-original"></i>
-        <p>GitHub</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-vscode-plain"></i>
-        <p>VS Code</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-linux-plain"></i>
-        <p>Linux</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-ubuntu-plain"></i>
-        <p>Ubuntu</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-aws-plain"></i>
-        <p>AWS</p>
-      </div>
-      <!-- Databases -->
-      <div class="icon-item">
-        <i class="devicon-mysql-plain"></i>
-        <p>MySQL</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-postgresql-plain"></i>
-        <p>PostgreSQL</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-mongodb-plain"></i>
-        <p>MongoDB</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-redis-plain"></i>
-        <p>Redis</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-sqlite-plain"></i>
-        <p>SQLite</p>
-      </div>
-      <div class="icon-item">
-        <i class="devicon-oracle-original"></i>
-        <p>Oracle</p>
-      </div>
+        <h2>Languages</h2>
+        <div class="btn-container">
+            <a href="Languages/Chapter-1/index.html" class="btn">Rust</a>
+            <a href="Languages/Chapter-2/index.html" class="btn">Ruby</a>
+            <a href="Languages/Chapter-3/index.html" class="btn">Kotlin</a>
+            <a href="Languages/Chapter-4/index.html" class="btn">Swift</a>
+            <a href="Languages/Chapter-5/index.html" class="btn">Go</a>
+            <a href="Languages/Chapter-6/index.html" class="btn">C++</a>
+            <a href="Languages/Chapter-7/index.html" class="btn">CSS</a>
+            <a href="Languages/Chapter-8/index.html" class="btn">Lua</a>
+            <a href="Languages/Chapter-9/index.html" class="btn">C#</a>
+            <a href="Languages/Chapter-10/index.html" class="btn">Java</a>
+            <a href="Languages/Chapter-11/index.html" class="btn">JavaScript</a>
+            <a href="Languages/Chapter-12/index.html" class="btn">Python</a>
+        </div>
+
+        <h2>Tools</h2>
+        <div class="btn-container">
+            <a href="https://www.docker.com/" class="btn">Docker</a>
+            <a href="https://git-scm.com/" class="btn">Git</a>
+            <a href="https://code.visualstudio.com/" class="btn">VSCode</a>
+            <a href="https://www.jenkins.io/" class="btn">Jenkins</a>
+            <a href="https://kubernetes.io/" class="btn">Kubernetes</a>
+            <a href="https://www.terraform.io/" class="btn">Terraform</a>
+            <a href="https://openwebui.github.io/" class="btn">OpenWebUI</a>
+            <a href="https://github.com/Mintplex-Labs/anything-llm" class="btn">AnythingLLM</a>
+            <a href="https://www.postman.com/" class="btn">Postman</a>
+        </div>
+
+        <h2>APIs</h2>
+        <div class="btn-container">
+            <a href="https://www.coinapi.io/" class="btn">CoinAPI</a>
+            <a href="https://etherscan.io/apis" class="btn">Etherscan API</a>
+            <a href="https://www.blockchain.com/api" class="btn">Blockchain.com API</a>
+            <a href="https://www.coingecko.com/en/api" class="btn">CoinGecko API</a>
+            <a href="https://nomics.com/docs/" class="btn">Nomics API</a>
+            <a href="https://developers.facebook.com/docs/graph-api" class="btn">Facebook Graph API</a>
+            <a href="https://developers.facebook.com/docs/instagram-api" class="btn">Instagram Graph API</a>
+            <a href="https://www.tensorflow.org/tfx/guide/serving" class="btn">TensorFlow Serving</a>
+            <a href="https://huggingface.co/transformers/" class="btn">Hugging Face Transformers</a>
+        </div>
+
+        <div class="icon-section">
+            <h2>Main Technologies Used</h2>
+            <div class="icon-list">
+                <div class="icon-item"><i class="devicon-python-plain colored"></i><br>Python</div>
+                <div class="icon-item"><i class="devicon-javascript-plain colored"></i><br>JavaScript</div>
+                <div class="icon-item"><i class="devicon-java-plain colored"></i><br>Java</div>
+                <div class="icon-item"><i class="devicon-html5-plain colored"></i><br>HTML5</div>
+                <div class="icon-item"><i class="devicon-css3-plain colored"></i><br>CSS3</div>
+                <div class="icon-item"><i class="devicon-cplusplus-plain colored"></i><br>C++</div>
+                <div class="icon-item"><i class="devicon-flask-original colored"></i><br>Flask</div>
+                <div class="icon-item"><i class="devicon-react-original colored"></i><br>React</div>
+                <div class="icon-item"><i class="devicon-nodejs-plain colored"></i><br>Node.js</div>
+                <div class="icon-item"><i class="devicon-django-plain colored"></i><br>Django</div>
+                <div class="icon-item"><i class="devicon-docker-plain colored"></i><br>Docker</div>
+                <div class="icon-item"><i class="devicon-git-plain colored"></i><br>Git</div>
+                <div class="icon-item"><i class="devicon-github-original colored"></i><br>GitHub</div>
+                <div class="icon-item"><i class="devicon-vscode-plain colored"></i><br>VS Code</div>
+                <div class="icon-item"><i class="devicon-linux-plain colored"></i><br>Linux</div>
+                <div class="icon-item"><i class="devicon-ubuntu-plain colored"></i><br>Ubuntu</div>
+                <div class="icon-item"><i class="devicon-amazonwebservices-original colored"></i><br>AWS</div>
+                <div class="icon-item"><i class="devicon-mysql-plain colored"></i><br>MySQL</div>
+                <div class="icon-item"><i class="devicon-postgresql-plain colored"></i><br>PostgreSQL</div>
+                <div class="icon-item"><i class="devicon-mongodb-plain colored"></i><br>MongoDB</div>
+                <div class="icon-item"><i class="devicon-redis-plain colored"></i><br>Redis</div>
+                <div class="icon-item"><i class="devicon-sqlite-plain colored"></i><br>SQLite</div>
+                <div class="icon-item"><i class="devicon-oracle-original colored"></i><br>Oracle</div>
+            </div>
+        </div>
+
+        <div class="icon-section">
+            <h2>Powered By</h2>
+            <div class="icon-list">
+                <div class="icon-item"><i class="devicon-github-original colored"></i><br>GitHub</div>
+                <div class="icon-item"><i class="devicon-gitlab-plain colored"></i><br>GitLab</div>
+                <div class="icon-item"><i class="devicon-bitbucket-original colored"></i><br>Bitbucket</div>
+                <div class="icon-item"><i class="devicon-vscode-plain colored"></i><br>VS Code</div>
+                <div class="icon-item"><i class="devicon-docker-plain colored"></i><br>Docker</div>
+                <div class="icon-item"><i class="devicon-azure-plain colored"></i><br>Azure</div>
+                <div class="icon-item"><i class="devicon-amazonwebservices-original colored"></i><br>AWS</div>
+            </div>
+        </div>
     </div>
-  </div>
 </body>
 </html>
-<div class="container icon-section">
-  <h2>Powered By</h2>
-  <div class="icon-list">
-    <div class="icon-item">
-      <i class="devicon-github-original"></i>
-      <p>GitHub</p>
-    </div>
-    <div class="icon-item">
-      <i class="devicon-gitlab-plain"></i>
-      <p>GitLab</p>
-    </div>
-    <div class="icon-item">
-      <i class="devicon-bitbucket-original"></i>
-      <p>Bitbucket</p>
-    </div>
-    <div class="icon-item">
-      <i class="devicon-visualstudio-plain"></i>
-      <p>VS Code</p>
-    </div>
-    <div class="icon-item">
-      <i class="devicon-docker-plain"></i>
-      <p>Docker</p>
-    </div>
-    <div class="icon-item">
-      <i class="devicon-azure-plain"></i>
-      <p>Azure</p>
-    </div>
-    <div class="icon-item">
-      <i class="devicon-aws-plain"></i>
-      <p>AWS</p>
-    </div>
-  </div>
-  <p style="text-align: center; margin-top: 20px; font-size: 1.2em;">Powered by</p>
-  <div class="icon-list" style="justify-content: center;">
-    <div class="icon-item">
-      <i class="devicon-github-original"></i>
-    </div>
-    <div class="icon-item">
-      <i class="devicon-gitlab-plain"></i>
-    </div>
-    <div class="icon-item">
-      <i class="devicon-azure-plain"></i>
-    </div>
-    <div class="icon-item">
-      <i class="devicon-docker-plain"></i>
-    </div>
-    <div class="icon-item">
-      <i class="devicon-visualstudio-plain"></i>
-    </div>
-  </div>
-</div>
