@@ -28,13 +28,8 @@
   <a href="Languages/Chapter-12/index.html"><img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin"></a>
 </p>
 
-Here's the enhanced version of the `README.md`, incorporating DevIcon icons and other relevant metrics. I'll only provide the full code for the sections that are modified:
-
 ---
 
-### 🛠️ Tools
-
-```markdown
 ### 🛠️ Tools
 <p align="center">
   <a href="Tools/01_Introduction_to_Tools/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg" alt="Introduction to Tools" width="40" height="40" /></a>
@@ -48,11 +43,7 @@ Here's the enhanced version of the `README.md`, incorporating DevIcon icons and 
   <a href="Tools/09_AnythingLLM/index.html"><img src="https://img.shields.io/badge/AnythingLLM-FF6F00?style=for-the-badge&logo=anything&logoColor=white" alt="AnythingLLM"></a>
   <a href="Tools/10_Postman/index.html"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" width="40" height="40" /></a>
 </p>
-```
 
-### 📡 APIs
-
-```markdown
 ### 📡 APIs
 <p align="center">
   <a href="https://www.coinapi.io/"><img src="https://img.shields.io/badge/CoinAPI-32A852?style=for-the-badge&logo=coinapi&logoColor=white" alt="CoinAPI"></a>
@@ -67,9 +58,6 @@ Here's the enhanced version of the `README.md`, incorporating DevIcon icons and 
 </p>
 ```
 
-### 📈 GitHub Stats
-
-```markdown
 ## 📈 GitHub Stats
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=TMHSDigital&show_icons=true&theme=radical" alt="GitHub Stats">
@@ -77,35 +65,24 @@ Here's the enhanced version of the `README.md`, incorporating DevIcon icons and 
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=TMHSDigital&theme=radical" alt="Repositories Per Language">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=TMHSDigital&theme=radical" alt="Most Commit Language">
 </p>
-```
 
-### 🐍 Contribution Graph Snake
-
-```markdown
 ## 🐍 Contribution Graph Snake
 <p align="center">
   <img src="https://github.com/TMHSDigital/TMHSDigital/raw/output/github-contribution-grid-snake.svg" alt="Contribution Graph Snake">
 </p>
-```
 
-### 🎉 Contributions and Support
-
-```markdown
 ## 🎉 Contributions and Support
 <p align="center">
   Contributions, issues, and feature requests are welcome!<br>
   Give a ⭐️ if you like this project!
 </p>
-```
 
 ### 📜 License
 
-```markdown
 ## 📜 License
 <p align="center">
   This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.
 </p>
-```
 
 ### ✍️ Author
 
