@@ -1,121 +1,94 @@
-# Programming Language Education Repository
+<h1 align="center">Programming Language Education Repository</h1>
+<p align="center">Explore the chapters and learn various programming languages, tools, and APIs. This repository contains comprehensive educational materials for each language.</p>
 
-This repository contains educational materials for various programming languages. Each chapter focuses on a different language, providing an introduction, setup instructions, basic syntax, control structures, and more.
-
-![GitHub repo size](https://img.shields.io/github/repo-size/TMHSDigital/Education)
-![GitHub contributors](https://img.shields.io/github/contributors/TMHSDigital/Education)
-![GitHub last commit](https://img.shields.io/github/last-commit/TMHSDigital/Education)
-![GitHub languages count](https://img.shields.io/github/languages/count/TMHSDigital/Education)
+<p align="center">
+  <img src="https://img.shields.io/github/repo-size/TMHSDigital/Education">
+  <img src="https://img.shields.io/github/contributors/TMHSDigital/Education">
+  <img src="https://img.shields.io/github/last-commit/TMHSDigital/Education">
+  <img src="https://img.shields.io/github/languages/count/TMHSDigital/Education">
+</p>
 
 ---
 
-## Table of Contents
+## 📚 Table of Contents
 
-### Chapter 1: ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-- [01 Introduction to Python](Chapter-1/01_Introduction_to_Python/README.md)
-- [02 Python Installation and Setup](Chapter-1/02_Python_Installation_and_Setup/README.md)
-- [03 Basic Syntax and Data Types](Chapter-1/03_Basic_Syntax_and_Data_Types/README.md)
-- [04 Control Structures](Chapter-1/04_Control_Structures/README.md)
-- [05 Functions](Chapter-1/05_Functions/README.md)
-- [06 Data Structures](Chapter-1/06_Data_Structures/README.md)
-- [07 Input and Output](Chapter-1/07_Input_and_Output/README.md)
-- [08 Error Handling](Chapter-1/08_Error_Handling/README.md)
-- [09 Basic Python Libraries](Chapter-1/09_Basic_Python_Libraries/README.md)
+### 🗂️ Languages
+<p align="center">
+  <a href="Languages/Chapter-1/index.html"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
+  <a href="Languages/Chapter-2/index.html"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"></a>
+  <a href="Languages/Chapter-3/index.html"><img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" alt="Java"></a>
+  <a href="Languages/Chapter-4/index.html"><img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#"></a>
+  <a href="Languages/Chapter-5/index.html"><img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="Lua"></a>
+  <a href="Languages/Chapter-6/index.html"><img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS"></a>
+  <a href="Languages/Chapter-7/index.html"><img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2b%2b&logoColor=white" alt="C++"></a>
+  <a href="Languages/Chapter-8/index.html"><img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go"></a>
+  <a href="Languages/Chapter-9/index.html"><img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" alt="Swift"></a>
+  <a href="Languages/Chapter-10/index.html"><img src="https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white" alt="Ruby"></a>
+  <a href="Languages/Chapter-11/index.html"><img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"></a>
+  <a href="Languages/Chapter-12/index.html"><img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin"></a>
+</p>
 
-### Chapter 2: ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-- [01 Introduction to JavaScript](Chapter-2/01_Introduction_to_JavaScript/README.md)
-- [02 JavaScript Installation and Setup](Chapter-2/02_JavaScript_Installation_and_Setup/README.md)
-- [03 Basic Syntax and Data Types](Chapter-2/03_Basic_Syntax_and_Data_Types/README.md)
-- [04 Control Structures](Chapter-2/04_Control_Structures/README.md)
-- [05 Functions](Chapter-2/05_Functions/README.md)
-- [06 Data Structures](Chapter-2/06_Data_Structures/README.md)
-- [07 Input and Output](Chapter-2/07_Input_and_Output/README.md)
-- [08 Error Handling](Chapter-2/08_Error_Handling/README.md)
-- [09 Basic JavaScript Libraries](Chapter-2/09_Basic_JavaScript_Libraries/README.md)
+### 🛠️ Tools
+<p align="center">
+  <a href="Tools/01_Introduction_to_Tools/index.html">Introduction to Tools</a> |
+  <a href="Tools/02_Docker/index.html">Docker</a> |
+  <a href="Tools/03_Git/index.html">Git</a> |
+  <a href="Tools/04_VSCode/index.html">VSCode</a> |
+  <a href="Tools/05_Jenkins/index.html">Jenkins</a> |
+  <a href="Tools/06_Kubernetes/index.html">Kubernetes</a> |
+  <a href="Tools/07_Terraform/index.html">Terraform</a> |
+  <a href="Tools/08_OpenWebUI/index.html">OpenWebUI</a> |
+  <a href="Tools/09_AnythingLLM/index.html">AnythingLLM</a> |
+  <a href="Tools/10_Postman/index.html">Postman</a>
+</p>
 
-### Chapter 3: ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
-- [01 Introduction to Java](Chapter-3/01_Introduction_to_Java/README.md)
-- [02 Java Installation and Setup](Chapter-3/02_Java_Installation_and_Setup/README.md)
-- [03 Basic Syntax and Data Types](Chapter-3/03_Basic_Syntax_and_Data_Types/README.md)
-- [04 Control Structures](Chapter-3/04_Control_Structures/README.md)
-- [05 Methods](Chapter-3/05_Methods/README.md)
-- [06 Classes and Objects](Chapter-3/06_Classes_and_Objects/README.md)
-- [07 Inheritance and Polymorphism](Chapter-3/07_Inheritance_and_Polymorphism/README.md)
-- [08 Exception Handling](Chapter-3/08_Exception_Handling/README.md)
-- [09 Basic Java Libraries](Chapter-3/09_Basic_Java_Libraries/README.md)
+### 📡 APIs
+<p align="center">
+  <a href="https://www.coinapi.io/">CoinAPI</a> |
+  <a href="https://etherscan.io/apis">Etherscan API</a> |
+  <a href="https://www.blockchain.com/api">Blockchain.com API</a> |
+  <a href="https://www.coingecko.com/en/api">CoinGecko API</a> |
+  <a href="https://nomics.com/docs/">Nomics API</a> |
+  <a href="https://developers.facebook.com/docs/graph-api">Facebook Graph API</a> |
+  <a href="https://developers.facebook.com/docs/instagram-api">Instagram Graph API</a> |
+  <a href="https://www.tensorflow.org/tfx/guide/serving">TensorFlow Serving</a> |
+  <a href="https://huggingface.co/transformers/">Hugging Face Transformers</a>
+</p>
 
-### Chapter 4: ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-- [01 Introduction to C#](Chapter-4/01_Introduction_to_CSharp/README.md)
-- [02 C# Installation and Setup](Chapter-4/02_CSharp_Installation_and_Setup/README.md)
-- [03 Basic Syntax and Data Types](Chapter-4/03_Basic_Syntax_and_Data_Types/README.md)
-- [04 Control Structures](Chapter-4/04_Control_Structures/README.md)
-- [05 Methods](Chapter-4/05_Methods/README.md)
-- [06 Classes and Objects](Chapter-4/06_Classes_and_Objects/README.md)
-- [07 Inheritance and Polymorphism](Chapter-4/07_Inheritance_and_Polymorphism/README.md)
-- [08 Exception Handling](Chapter-4/08_Exception_Handling/README.md)
-- [09 Basic C# Libraries](Chapter-4/09_Basic_CSharp_Libraries/README.md)
+---
 
-### Chapter 5: ![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
-- [01 Introduction to Lua](Chapter-5/01_Introduction_to_Lua/README.md)
-- [02 Lua Installation and Setup](Chapter-5/02_Lua_Installation_and_Setup/README.md)
-- [03 Basic Syntax and Data Types](Chapter-5/03_Basic_Syntax_and_Data_Types/README.md)
-- [04 Control Structures](Chapter-5/04_Control_Structures/README.md)
-- [05 Functions](Chapter-5/05_Functions/README.md)
-- [06 Tables](Chapter-5/06_Tables/README.md)
-- [07 Modules](Chapter-5/07_Modules/README.md)
-- [08 Error Handling](Chapter-5/08_Error_Handling/README.md)
-- [09 Standard Libraries](Chapter-5/09_Standard_Libraries/README.md)
+## 📈 GitHub Stats
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=TMHSDigital&show_icons=true&theme=radical" alt="GitHub Stats">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TMHSDigital&layout=compact&theme=radical" alt="Top Languages">
+</p>
 
-### Chapter 6: ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-- [01 Introduction to CSS](Chapter-6/01_Introduction_to_CSS/README.md)
-- [02 CSS Installation and Setup](Chapter-6/02_CSS_Installation_and_Setup/README.md)
-- [03 Basic Syntax and Selectors](Chapter-6/03_Basic_Syntax_and_Selectors/README.md)
-- [04 Box Model](Chapter-6/04_Box_Model/README.md)
-- [05 Flexbox](Chapter-6/05_Flexbox/README.md)
-- [06 Grid](Chapter-6/06_Grid/README.md)
-- [07 Responsive Design](Chapter-6/07_Responsive_Design/README.md)
-- [08 CSS Transitions and Animations](Chapter-6/08_CSS_Transitions_and_Animations/README.md)
-- [09 CSS Frameworks](Chapter-6/09_CSS_Frameworks/README.md)
+## 🐍 Contribution Graph Snake
+<p align="center">
+  <img src="https://github.com/TMHSDigital/TMHSDigital/blob/output/github-contribution-grid-snake.svg" alt="Contribution Graph Snake">
+</p>
 
-### Chapter 7: ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2b%2b&logoColor=white)
-- [01 Introduction to C++](Chapter-7/01_Introduction_to_CPP/README.md)
-- [02 C++ Installation and Setup](Chapter-7/02_CPP_Installation_and_Setup/README.md)
-- [03 Basic Syntax and Data Types](Chapter-7/03_Basic_Syntax_and_Data_Types/README.md)
-- [04 Control Structures](Chapter-7/04_Control_Structures/README.md)
-- [05 Functions](Chapter-7/05_Functions/README.md)
-- [06 Classes and Objects](Chapter-7/06_Classes_and_Objects/README.md)
-- [07 Inheritance and Polymorphism](Chapter-7/07_Inheritance_and_Polymorphism/README.md)
-- [08 Exception Handling](Chapter-7/08_Exception_Handling/README.md)
-- [09 STL Containers](Chapter-7/09_STL_Containers/README.md)
+## 🎉 Contributions and Support
+<p align="center">
+  Contributions, issues, and feature requests are welcome!<br>
+  Give a ⭐️ if you like this project!
+</p>
 
-### Chapter 8: ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-- [01 Introduction to Go](Chapter-8/01_Introduction_to_Go/README.md)
-- [02 Go Installation and Setup](Chapter-8/02_Go_Installation_and_Setup/README.md)
-- [03 Basic Syntax and Data Types](Chapter-8/03_Basic_Syntax_and_Data_Types/README.md)
-- [04 Control Structures](Chapter-8/04_Control_Structures/README.md)
-- [05 Functions](Chapter-8/05_Functions/README.md)
-- [06 Concurrency](Chapter-8/07_Concurrency/README.md)
-- [07 Error Handling](Chapter-8/08_Error_Handling/README.md)
-- [08 Packages and Modules](Chapter-8/09_Packages_and_Modules/README.md)
+---
 
-### Chapter 9: ![Swift](https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white)
-- [01 Introduction to Swift](Chapter-9/01_Introduction_to_Swift/README.md)
-- [02 Swift Installation and Setup](Chapter-9/02_Swift_Installation_and_Setup/README.md)
-- [03 Basic Syntax and Data Types](Chapter-9/03_Basic_Syntax_and_Data_Types/README.md)
-- [04 Control Structures](Chapter-9/04_Control_Structures/README.md)
-- [05 Functions](Chapter-9/05_Functions/README.md)
-- [06 Classes and Objects](Chapter-9/06_Classes_and_Objects/README.md)
-- [07 Protocols and Delegates](Chapter-9/07_Protocols_and_Delegates/README.md)
-- [08 Error Handling](Chapter-9/08_Error_Handling/README.md)
-- [09 Collections](Chapter-9/09_Collections/README.md)
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Chapter 10: ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
-- [01 Introduction to Ruby](Chapter-10/01_Introduction_to_Ruby/README.md)
-- [02 Ruby Installation and Setup](Chapter-10/02_Ruby_Installation_and_Setup/README.md)
-- [03 Basic Syntax and Data Types](Chapter-10/03_Basic_Syntax_and_Data_Types/README.md)
-- [04 Control Structures](Chapter-10/04_Control_Structures/README.md)
-- [05 Methods](Chapter-10/05_Methods/README.md)
-- [06 Classes and Objects](Chapter-10/06_Classes_and_Objects/README.md)
-- [07 Modules and Mixins](Chapter-10/07_Modules_and_Mixins/README.md)
-- [08 Exception Handling](Chapter-10/08_Exception_Handling/README.md)
-- [09 Collections](Chapter-10/09_Collections/README.md)
+## ✍️ Author
+
+<p align="center">
+  <strong>Thomas Mathes</strong><br>
+</p>
+
+<p align="center">
+  <a href="https://github.com/TMHSDigital">GitHub Profile</a> |
+  <a href="https://www.linkedin.com/in/thomasmathes/">LinkedIn</a> |
+  <a href="https://www.linkedin.com/company/tm-hospitality-strategies/?viewAsMember=true">LinkedIn</a>
+</p>
+
+---
