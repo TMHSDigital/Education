@@ -80,15 +80,9 @@
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## ✍️ Author
-
 <p align="center">
   <strong>Thomas Mathes</strong><br>
-</p>
-
-<p align="center">
   <a href="https://github.com/TMHSDigital">GitHub Profile</a> |
-  <a href="https://www.linkedin.com/in/thomasmathes/">LinkedIn</a> |
-  <a href="https://www.linkedin.com/company/tm-hospitality-strategies/?viewAsMember=true">LinkedIn</a>
+  <a href="mailto:thomas@tmhsdigital.com">Email</a> |
+  <a href="https://www.linkedin.com/in/thomasmathes/">LinkedIn</a>
 </p>
-
----
