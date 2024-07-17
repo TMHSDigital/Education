@@ -3,6 +3,7 @@
 ## Languages/
 ### chapter-styles.css
 ### Chapter-1/
+```
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_Python/
 │   │   │   └── README.md
@@ -29,7 +30,9 @@
 │   │   ├── 09_Basic_Python_Libraries/
 │   │   │   ├── README.md
 │   │   │   └── example.py
+```
 ### Chapter-2/
+```
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_Ruby/
 │   │   │   └── README.md
@@ -56,7 +59,9 @@
 │   │   ├── 09_Collections/
 │   │   │   ├── README.md
 │   │   │   └── example.rb
+```
 ### Chapter-3/
+```
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_Kotlin/
 │   │   │   └── README.md
@@ -83,7 +88,9 @@
 │   │   ├── 09_Collections/
 │   │   │   ├── README.md
 │   │   │   └── example.kt
+```
 ### Chapter-4/
+```
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_CSharp/
 │   │   │   └── README.md
@@ -110,7 +117,9 @@
 │   │   ├── 09_Collections/
 │   │   │   ├── README.md
 │   │   │   └── example.cs
+```
 ### Chapter-5/
+```
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_Go/
 │   │   │   └── README.md
@@ -137,7 +146,9 @@
 │   │   ├── 09_Collections/
 │   │   │   ├── README.md
 │   │   │   └── example.go
-Chapter-6/
+```
+### Chapter-6/
+```
 │   ├── index.html
 │   ├── 01_Introduction_to_CSS/
 │   │   └── README.md
@@ -190,8 +201,9 @@ Chapter-6/
 │   ├── 09_Standard_Template_Library/
 │   │   ├── README.md
 │   │   └── example.cpp
-
-Chapter-8/
+```
+### Chapter-8/
+```
 │   ├── index.html
 │   ├── 01_Introduction_to_Lua/
 │   │   └── README.md
@@ -218,7 +230,9 @@ Chapter-8/
 │   ├── 09_Coroutines/
 │   │   ├── README.md
 │   │   └── example.lua
-Chapter-9/
+```
+### Chapter-9/
+```
 │   ├── index.html
 │   ├── 01_Introduction_to_Swift/
 │   │   └── README.md
@@ -245,7 +259,9 @@ Chapter-9/
 │   ├── 09_Collections/
 │   │   ├── README.md
 │   │   └── example.swift
-Chapter-10/
+```
+### Chapter-10/
+```
 │   ├── index.html
 │   ├── 01_Introduction_to_Ruby/
 │   │   └── README.md
@@ -272,7 +288,9 @@ Chapter-10/
 │   ├── 09_Collections/
 │   │   ├── README.md
 │   │   └── example.rb
-│   ├── Chapter-11/
+```
+### Chapter-11/
+```
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_Kotlin/
 │   │   │   └── README.md
@@ -299,8 +317,9 @@ Chapter-10/
 │   │   ├── 09_Collections/
 │   │   │   ├── README.md
 │   │   │   └── example.kt
-
-# Chapter-12/
+```
+### Chapter-12/
+```
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_R/
 │   │   │   └── README.md
@@ -324,7 +343,9 @@ Chapter-10/
 │   │   ├── 08_Data_Manipulation/
 │   │   │   ├── README.md
 │   │   │   └── example.R
-├── Tools/
+```
+## Tools/
+```
 │   ├── 01_Introduction_to_Tools/
 │   │   └── index.html
 │   ├── 02_Docker/
