@@ -70,6 +70,12 @@
     .btn:hover {
       background-color: #0056b3;
     }
+    .resource-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
@@ -84,19 +90,29 @@
       <a href="#advanced">Advanced Topics</a>
     </nav>
     <section id="intro">
-      
-<h2>Introduction to C#</h2>
-<p>C# is a modern, object-oriented programming language developed by Microsoft for building a wide range of applications.</p>
-<a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="btn">Learn More</a>
+      <h2>Introduction to C#</h2>
+      <p>C# is a modern, object-oriented programming language developed by Microsoft, designed to be simple, efficient, and flexible.</p>
+      <pre><code class="language-csharp">using System;
 
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
+}</code></pre>
+      <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="btn">Learn More</a>
     </section>
     <section id="getting-started">
       <h2>Getting Started</h2>
       <p>To get started with C#, follow the steps below:</p>
       <ul>
-        <li>Step 1: Install C#</li>
-        <li>Step 2: Set up your development environment</li>
-        <li>Step 3: Write your first C# program</li>
+        <li>Step 1: Install the .NET SDK from the official <a href="https://dotnet.microsoft.com/download" target="_blank">Microsoft website</a>.</li>
+        <li>Step 2: Set up your development environment using an IDE like <a href="https://visualstudio.microsoft.com/" target="_blank">Visual Studio</a> or <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>.</li>
+        <li>Step 3: Write your first C# program in a file with a `.cs` extension and run it using the command <code>dotnet run</code>.</li>
       </ul>
     </section>
     <section id="advanced">
@@ -104,9 +120,20 @@
       <p>Once you are comfortable with the basics, you can move on to more advanced topics:</p>
       <ul>
         <li>Topic 1: Advanced C# syntax</li>
-        <li>Topic 2: C# libraries and frameworks</li>
+        <li>Topic 2: .NET libraries and frameworks</li>
         <li>Topic 3: Best practices and design patterns in C#</li>
       </ul>
+    </section>
+    <section id="resources">
+      <h2>C# Resources</h2>
+      <div class="resource-buttons">
+        <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" class="btn">Official Documentation</a>
+        <a href="https://www.geeksforgeeks.org/csharp-programming-language/" target="_blank" class="btn">GeeksforGeeks</a>
+        <a href="https://www.tutorialspoint.com/csharp/index.htm" target="_blank" class="btn">TutorialsPoint</a>
+        <a href="https://stackoverflow.com/questions/tagged/c%23" target="_blank" class="btn">Stack Overflow</a>
+        <a href="https://www.nuget.org/" target="_blank" class="btn">NuGet Package Manager</a>
+        <a href="https://github.com/dotnet/csharplang" target="_blank" class="btn">C# on GitHub</a>
+      </div>
     </section>
   </div>
 </body>
