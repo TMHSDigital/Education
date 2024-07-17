@@ -1,60 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education Repository</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
-        a {
-            text-decoration: none;
-            color: #1a73e8;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Education Repository</h1>
-        <p>Welcome to the Education Repository. This repository contains examples and usage information for various programming languages, tools, and APIs.</p>
+import React, { useState } from 'react';
+import { Search, BookOpen, ChevronDown, ChevronUp } from 'lucide-react';
 
-        <h2>Chapters</h2>
-        <ul>
-            <li><a href="Chapter-1/index.html">Chapter 1: Python</a></li>
-            <li><a href="Chapter-2/index.html">Chapter 2: JavaScript</a></li>
-            <li><a href="Chapter-3/index.html">Chapter 3: Java</a></li>
-            <li><a href="Chapter-4/index.html">Chapter 4: C#</a></li>
-            <li><a href="Chapter-5/index.html">Chapter 5: Lua</a></li>
-            <li><a href="Chapter-6/index.html">Chapter 6: CSS</a></li>
-            <li><a href="Chapter-7/index.html">Chapter 7: C++</a></li>
-            <li><a href="Chapter-8/index.html">Chapter 8: Go</a></li>
-            <li><a href="Chapter-9/index.html">Chapter 9: Swift</a></li>
-            <li><a href="Chapter-10/index.html">Chapter 10: Ruby</a></li>
-            <li><a href="Chapter-11/index.html">Chapter 11: Kotlin</a></li>
-            <li><a href="Chapter-12/index.html">Chapter 12: R</a></li>
-            <li><a href="Tools/index.html">Tools</a></li>
-            <li><a href="API/index.html">APIs</a></li>
-        </ul>
+const chapters = [
+  { id: 1, title: "Python", path: "Chapter-1/index.html", color: "bg-blue-500" },
+  { id: 2, title: "JavaScript", path: "Chapter-2/index.html", color: "bg-yellow-500" },
+  { id: 3, title: "Java", path: "Chapter-3/index.html", color: "bg-red-500" },
+  { id: 4, title: "C#", path: "Chapter-4/index.html", color: "bg-purple-500" },
+  { id: 5, title: "Lua", path: "Chapter-5/index.html", color: "bg-blue-400" },
+  { id: 6, title: "CSS", path: "Chapter-6/index.html", color: "bg-pink-500" },
+  { id: 7, title: "C++", path: "Chapter-7/index.html", color: "bg-blue-600" },
+  { id: 8, title: "Go", path: "Chapter-8/index.html", color: "bg-cyan-500" },
+  { id: 9, title: "Swift", path: "Chapter-9/index.html", color: "bg-orange-500" },
+  { id: 10, title: "Ruby", path: "Chapter-10/index.html", color: "bg-red-600" },
+  { id: 11, title: "Kotlin", path: "Chapter-11/index.html", color: "bg-purple-600" },
+  { id: 12, title: "R", path: "Chapter-12/index.html", color: "bg-blue-700" },
+  { id: 13, title: "Tools", path: "Tools/index.html", color: "bg-gray-500" },
+  { id: 14, title: "APIs", path: "API/index.html", color: "bg-green-500" },
+];
+
+const EducationRepository = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [expandedChapter, setExpandedChapter] = useState(null);
+  const [hoveredChapter, setHoveredChapter] = useState(null);
+
+  const filteredChapters = chapters.filter(chapter =>
+    chapter.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  return (
+    <div className="max-w-4xl mx-auto p-6 bg-gray-100 min-h-screen">
+      <h1 className="text-5xl font-bold text-gray-800 mb-4 text-center animate-fadeIn">
+        Education Repository
+      </h1>
+      <p className="text-gray-600 mb-6 text-center animate-fadeIn animation-delay-200">
+        Explore our comprehensive collection of programming languages, tools, and APIs.
+      </p>
+      
+      <div className="relative mb-6 animate-fadeIn animation-delay-400">
+        <input
+          type="text"
+          placeholder="Search chapters..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="w-full p-3 pl-12 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 ease-in-out"
+        />
+        <Search className="absolute left-3 top-3.5 text-gray-400" size={24} />
+      </div>
+
+      <h2 className="text-2xl font-semibold text-gray-700 mb-4 animate-fadeIn animation-delay-600">Chapters</h2>
+      <ul className="space-y-3">
+        {filteredChapters.map((chapter) => (
+          <li 
+            key={chapter.id} 
+            className={`bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 ease-in-out 
+                        ${hoveredChapter === chapter.id ? 'scale-105' : 'scale-100'}`}
+            onMouseEnter={() => setHoveredChapter(chapter.id)}
+            onMouseLeave={() => setHoveredChapter(null)}
+          >
+            <div 
+              className={`flex justify-between items-center cursor-pointer p-4 ${chapter.color} text-white`}
+              onClick={() => setExpandedChapter(expandedChapter === chapter.id ? null : chapter.id)}
+            >
+              <span className="font-semibold">{chapter.title}</span>
+              {expandedChapter === chapter.id ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+            </div>
+            <div 
+              className={`overflow-hidden transition-all duration-300 ease-in-out
+                          ${expandedChapter === chapter.id ? 'max-h-40' : 'max-h-0'}`}
+            >
+              <div className="p-4 bg-white">
+                <p className="text-gray-600 mb-2">
+                  Discover the fundamentals and advanced concepts of {chapter.title}.
+                </p>
+                <a 
+                  href={chapter.path} 
+                  className="inline-flex items-center text-blue-500 hover:underline group"
+                >
+                  <span>Go to chapter</span>
+                  <BookOpen size={18} className="ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+                </a>
+              </div>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
-</body>
-</html>
+  );
+};
+
+export default EducationRepository;
