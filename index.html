@@ -1,3 +1,8 @@
+Absolutely! We can incorporate the Bebas Neue font into your `index.html` file. Based on the screenshot, it looks like the import code for the font should be added to the head of your HTML file. Then, we'll apply the font to the appropriate elements.
+
+Here's the updated `index.html` file with Bebas Neue integrated:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +10,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Educational Repository</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
     body {
       font-family: 'Roboto', sans-serif;
       background-color: #f0f0f0;
@@ -24,6 +30,7 @@
       text-align: center;
     }
     h2 {
+      font-family: 'Bebas Neue', sans-serif;
       font-size: 2em;
       margin-top: 20px;
       color: #444;
@@ -219,6 +226,18 @@
       <div class="icon-item">
         <i class="devicon-mongodb-plain"></i>
         <p>MongoDB</p>
+      </div>
+      <div class="icon-item">
+        <i class="devicon-redis-plain"></i>
+        <p>Redis</p>
+      </div>
+      <div class="icon-item">
+        <i class="devicon-sqlite-plain"></i>
+        <p>SQLite</p>
+      </div>
+      <div class="icon-item">
+        <i class="devicon-oracle-original"></i>
+        <p>Oracle</p>
       </div>
     </div>
   </div>
