@@ -1,5 +1,7 @@
 # Input and Output
 
+Lua provides basic functions for reading from and writing to files, as well as handling user input.
+
 ## Reading from and Writing to Files
 
 ```lua
