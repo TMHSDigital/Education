@@ -1,7 +1,8 @@
-Education/
-├── Languages/
-│   ├── chapter-styles.css
-│   ├── Chapter-1/
+# Education/
+
+## Languages/
+### chapter-styles.css
+### Chapter-1/
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_Python/
 │   │   │   └── README.md
@@ -28,7 +29,7 @@ Education/
 │   │   ├── 09_Basic_Python_Libraries/
 │   │   │   ├── README.md
 │   │   │   └── example.py
-│   ├── Chapter-2/
+### Chapter-2/
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_Ruby/
 │   │   │   └── README.md
@@ -55,7 +56,7 @@ Education/
 │   │   ├── 09_Collections/
 │   │   │   ├── README.md
 │   │   │   └── example.rb
-│   ├── Chapter-3/
+### Chapter-3/
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_Kotlin/
 │   │   │   └── README.md
@@ -82,7 +83,7 @@ Education/
 │   │   ├── 09_Collections/
 │   │   │   ├── README.md
 │   │   │   └── example.kt
-│   ├── Chapter-4/
+### Chapter-4/
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_CSharp/
 │   │   │   └── README.md
@@ -109,7 +110,7 @@ Education/
 │   │   ├── 09_Collections/
 │   │   │   ├── README.md
 │   │   │   └── example.cs
-│   ├── Chapter-5/
+### Chapter-5/
 │   │   ├── index.html
 │   │   ├── 01_Introduction_to_Go/
 │   │   │   └── README.md
