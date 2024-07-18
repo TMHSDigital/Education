@@ -8,41 +8,64 @@
     <link rel="stylesheet" href="site-styles.css">
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            loadSection('section-html/landing-page.html', 'landing-page');
-            loadSection('section-html/languages.html', 'languages');
-            loadSection('section-html/tools.html', 'tools');
-            loadSection('section-html/apis.html', 'apis');
-            loadSection('section-html/main-technologies-used.html', 'main-technologies-used');
-            loadSection('section-html/powered-by.html', 'powered-by');
+            loadSection('sections-html/landing-page.html', 'landing-page');
+            loadSection('sections-html/languages.html', 'languages');
+            loadSection('sections-html/tools.html', 'tools');
+            loadSection('sections-html/apis.html', 'apis');
+            loadSection('sections-html/main-technologies-used.html', 'main-technologies-used');
+            loadSection('sections-html/powered-by.html', 'powered-by');
         });
 
         function loadSection(url, elementId) {
             fetch(url)
-                .then(response => response.text())
-                .then(data => document.getElementById(elementId).innerHTML = data)
-                .catch(error => console.log('Error:', error));
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(html => {
+                    document.getElementById(elementId).innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
         }
 
-        function toggleVisibility(elementId) {
-            const element = document.getElementById(elementId);
-            element.style.display = element.style.display === 'none' ? 'block' : 'none';
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
         }
     </script>
 </head>
 <body>
     <div class="container">
         <header>
-            <div id="landing-page"></div>
+            <h1>Educational Repository</h1>
+            <p>Explore the chapters and learn various programming languages, tools, and APIs.</p>
         </header>
 
+        <nav>
+            <ul>
+                <li><a href="#" onclick="toggleSection('landing-page')">Landing Page</a></li>
+                <li><a href="#" onclick="toggleSection('languages')">Languages</a></li>
+                <li><a href="#" onclick="toggleSection('tools')">Tools</a></li>
+                <li><a href="#" onclick="toggleSection('apis')">APIs</a></li>
+                <li><a href="#" onclick="toggleSection('main-technologies-used')">Main Technologies Used</a></li>
+                <li><a href="#" onclick="toggleSection('powered-by')">Powered By</a></li>
+            </ul>
+        </nav>
+
+        <div id="landing-page"></div>
         <div id="languages"></div>
         <div id="tools"></div>
         <div id="apis"></div>
-
-        <button onclick="toggleVisibility('main-technologies-used')">Toggle Technologies</button>
-        <div id="main-technologies-used" style="display: none;"></div>
-
-        <div id="powered-by"></div>
+        <div id="main-technologies-used" style="display:none;"></div>
+        <div id="powered-by" style="display:none;"></div>
     </div>
 </body>
 </html>
