@@ -1,3 +1,5 @@
+/* devicon-index.css */
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -45,4 +47,40 @@ h1, h2 {
 
 .icon-item span {
     font-size: 14px;
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
 }
