@@ -5,146 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Repository</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="devicon-index.css">
-    <style>
-        /* Additional global styles can go here */
-        .dropdown-content {
-            display: none;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+    <link rel="stylesheet" href="site-styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadSection('section-html/landing-page.html', 'landing-page');
+            loadSection('section-html/languages.html', 'languages');
+            loadSection('section-html/tools.html', 'tools');
+            loadSection('section-html/apis.html', 'apis');
+            loadSection('section-html/main-technologies-used.html', 'main-technologies-used');
+            loadSection('section-html/powered-by.html', 'powered-by');
+        });
+
+        function loadSection(url, elementId) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => document.getElementById(elementId).innerHTML = data)
+                .catch(error => console.log('Error:', error));
         }
 
-        .dropdown-btn {
-            display: block;
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            font-size: 1em;
-            margin: 10px auto;
+        function toggleVisibility(elementId) {
+            const element = document.getElementById(elementId);
+            element.style.display = element.style.display === 'none' ? 'block' : 'none';
         }
-
-        .dropdown-btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    </script>
 </head>
 <body>
     <div class="container">
-        <h1 class="section-title">Educational Repository</h1>
-        <p class="section-content">Explore the chapters and learn various programming languages, tools, and APIs.</p>
+        <header>
+            <div id="landing-page"></div>
+        </header>
 
-        <h2 class="section-title">Languages</h2>
-        <div class="btn-container">
-            <a href="Languages/Chapter-1/index.html" class="btn">Python</a>
-            <a href="Languages/Chapter-2/index.html" class="btn">JavaScript</a>
-            <a href="Languages/Chapter-3/index.html" class="btn">Java</a>
-            <a href="Languages/Chapter-4/index.html" class="btn">C++</a>
-            <a href="Languages/Chapter-5/index.html" class="btn">Lua</a>
-            <a href="Languages/Chapter-6/index.html" class="btn">CSS</a>
-            <a href="Languages/Chapter-7/index.html" class="btn">C#</a>
-            <a href="Languages/Chapter-8/index.html" class="btn">Go</a>
-            <a href="Languages/Chapter-9/index.html" class="btn">Swift</a>
-            <a href="Languages/Chapter-10/index.html" class="btn">Ruby</a>
-            <a href="Languages/Chapter-11/index.html" class="btn">Kotlin</a>
-            <a href="Languages/Chapter-12/index.html" class="btn">R</a>
-        </div>
+        <div id="languages"></div>
+        <div id="tools"></div>
+        <div id="apis"></div>
 
-        <h2 class="section-title">Tools</h2>
-        <div class="btn-container">
-            <a href="Tools/01_Introduction_to_Tools/index.html" class="btn">Introduction</a>
-            <a href="Tools/02_Docker/index.html" class="btn">Docker</a>
-            <a href="Tools/03_Git/index.html" class="btn">Git</a>
-            <a href="Tools/04_VSCode/index.html" class="btn">VSCode</a>
-            <a href="Tools/05_Jenkins/index.html" class="btn">Jenkins</a>
-            <a href="Tools/06_Kubernetes/index.html" class="btn">Kubernetes</a>
-            <a href="Tools/07_Terraform/index.html" class="btn">Terraform</a>
-            <a href="Tools/08_OpenWebUI/index.html" class="btn">OpenWebUI</a>
-            <a href="Tools/09_AnythingLLM/index.html" class="btn">AnythingLLM</a>
-            <a href="Tools/10_Postman/index.html" class="btn">Postman</a>
-            <a href="Tools/11_Ansible/index.html" class="btn">Ansible</a>
-            <a href="Tools/12_Helm/index.html" class="btn">Helm</a>
-            <a href="Tools/13_AWS_CLI/index.html" class="btn">AWS CLI</a>
-            <a href="Tools/14_Azure_CLI/index.html" class="btn">Azure CLI</a>
-        </div>
+        <button onclick="toggleVisibility('main-technologies-used')">Toggle Technologies</button>
+        <div id="main-technologies-used" style="display: none;"></div>
 
-        <h2 class="section-title">APIs</h2>
-        <div class="btn-container">
-            <a href="API/CoinAPI/README.md" class="btn">CoinAPI</a>
-            <a href="API/Etherscan_API/README.md" class="btn">Etherscan API</a>
-            <a href="API/Blockchain_API/README.md" class="btn">Blockchain.com API</a>
-            <a href="API/CoinGecko_API/README.md" class="btn">CoinGecko API</a>
-            <a href="API/Nomics_API/README.md" class="btn">Nomics API</a>
-            <a href="API/Facebook_Graph_API/README.md" class="btn">Facebook Graph API</a>
-            <a href="API/Instagram_Graph_API/README.md" class="btn">Instagram Graph API</a>
-            <a href="API/TensorFlow_Serving/README.md" class="btn">TensorFlow Serving</a>
-            <a href="API/Hugging_Face_Transformers/README.md" class="btn">Hugging Face Transformers</a>
-            <a href="API/Twitter_API/README.md" class="btn">Twitter API</a>
-            <a href="API/Skyscanner/README.md" class="btn">Skyscanner</a>
-            <a href="API/Amadeus/README.md" class="btn">Amadeus</a>
-            <a href="API/OpenWeatherMap/README.md" class="btn">OpenWeatherMap</a>
-            <a href="API/NASA/README.md" class="btn">NASA API</a>
-        </div>
-
-        <div class="icon-section">
-            <h2 class="section-title">Main Technologies Used</h2>
-            <button class="dropdown-btn" onclick="toggleDropdown()">Toggle Technologies</button>
-            <div id="dropdownContent" class="dropdown-content">
-                <div class="icon-list">
-                    <div class="icon-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
-                    <div class="icon-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-                    <div class="icon-item"><i class="devicon-java-plain colored"></i><span>Java</span></div>
-                    <div class="icon-item"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
-                    <div class="icon-item"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
-                    <div class="icon-item"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
-                    <div class="icon-item"><i class="devicon-flask-original colored"></i><span>Flask</span></div>
-                    <div class="icon-item"><i class="devicon-react-original colored"></i><span>React</span></div>
-                    <div class="icon-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
-                    <div class="icon-item"><i class="devicon-django-plain colored"></i><span>Django</span></div>
-                    <div class="icon-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
-                    <div class="icon-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
-                    <div class="icon-item"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
-                    <div class="icon-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
-                    <div class="icon-item"><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
-                    <div class="icon-item"><i class="devicon-ubuntu-plain colored"></i><span>Ubuntu</span></div>
-                    <div class="icon-item"><i class="devicon-amazonwebservices-original colored"></i><span>AWS</span></div>
-                    <div class="icon-item"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
-                    <div class="icon-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
-                    <div class="icon-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
-                    <div class="icon-item"><i class="devicon-redis-plain colored"></i><span>Redis</span></div>
-                    <div class="icon-item"><i class="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
-                    <div class="icon-item"><i class="devicon-oracle-original colored"></i><span>Oracle</span></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="icon-section">
-            <h2 class="section-title">Powered By</h2>
-            <div class="icon-list">
-                <div class="icon-item"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
-                <div class="icon-item"><i class="devicon-gitlab-plain colored"></i><span>GitLab</span></div>
-                <div class="icon-item"><i class="devicon-bitbucket-original colored"></i><span>Bitbucket</span></div>
-                <div class="icon-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
-                <div class="icon-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
-                <div class="icon-item"><i class="devicon-azure-plain colored"></i><span>Azure</span></div>
-                <div class="icon-item"><i class="devicon-amazonwebservices-original colored"></i><span>AWS</span></div>
-            </div>
-        </div>
+        <div id="powered-by"></div>
     </div>
-
-    <script>
-        function toggleDropdown() {
-            var content = document.getElementById('dropdownContent');
-            if (content.style.display === 'flex') {
-                content.style.display = 'none';
-            } else {
-                content.style.display = 'flex';
-            }
-        }
-    </script>
 </body>
 </html>
