@@ -11,10 +11,15 @@
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            background-color: #f0f0f0;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .btn-container {
             display: flex;
@@ -29,6 +34,10 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
         }
         .icon-section {
             margin-top: 40px;
@@ -43,6 +52,9 @@
             font-size: 48px;
             text-align: center;
         }
+        h2 {
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
@@ -52,44 +64,54 @@
 
         <h2>Languages</h2>
         <div class="btn-container">
-            <a href="Languages/Chapter-1/index.html" class="btn">Rust</a>
-            <a href="Languages/Chapter-2/index.html" class="btn">Ruby</a>
-            <a href="Languages/Chapter-3/index.html" class="btn">Kotlin</a>
-            <a href="Languages/Chapter-4/index.html" class="btn">Swift</a>
-            <a href="Languages/Chapter-5/index.html" class="btn">Go</a>
-            <a href="Languages/Chapter-6/index.html" class="btn">C++</a>
-            <a href="Languages/Chapter-7/index.html" class="btn">CSS</a>
-            <a href="Languages/Chapter-8/index.html" class="btn">Lua</a>
-            <a href="Languages/Chapter-9/index.html" class="btn">C#</a>
-            <a href="Languages/Chapter-10/index.html" class="btn">Java</a>
-            <a href="Languages/Chapter-11/index.html" class="btn">JavaScript</a>
-            <a href="Languages/Chapter-12/index.html" class="btn">Python</a>
+            <a href="Languages/Chapter-1/index.html" class="btn">Python</a>
+            <a href="Languages/Chapter-2/index.html" class="btn">JavaScript</a>
+            <a href="Languages/Chapter-3/index.html" class="btn">Java</a>
+            <a href="Languages/Chapter-4/index.html" class="btn">C++</a>
+            <a href="Languages/Chapter-5/index.html" class="btn">Lua</a>
+            <a href="Languages/Chapter-6/index.html" class="btn">CSS</a>
+            <a href="Languages/Chapter-7/index.html" class="btn">C#</a>
+            <a href="Languages/Chapter-8/index.html" class="btn">Go</a>
+            <a href="Languages/Chapter-9/index.html" class="btn">Swift</a>
+            <a href="Languages/Chapter-10/index.html" class="btn">Ruby</a>
+            <a href="Languages/Chapter-11/index.html" class="btn">Kotlin</a>
+            <a href="Languages/Chapter-12/index.html" class="btn">R</a>
         </div>
 
         <h2>Tools</h2>
         <div class="btn-container">
-            <a href="https://www.docker.com/" class="btn">Docker</a>
-            <a href="https://git-scm.com/" class="btn">Git</a>
-            <a href="https://code.visualstudio.com/" class="btn">VSCode</a>
-            <a href="https://www.jenkins.io/" class="btn">Jenkins</a>
-            <a href="https://kubernetes.io/" class="btn">Kubernetes</a>
-            <a href="https://www.terraform.io/" class="btn">Terraform</a>
-            <a href="https://openwebui.github.io/" class="btn">OpenWebUI</a>
-            <a href="https://github.com/Mintplex-Labs/anything-llm" class="btn">AnythingLLM</a>
-            <a href="https://www.postman.com/" class="btn">Postman</a>
+            <a href="Tools/01_Introduction_to_Tools/README.md" class="btn">Introduction</a>
+            <a href="Tools/02_Docker/README.md" class="btn">Docker</a>
+            <a href="Tools/03_Git/README.md" class="btn">Git</a>
+            <a href="Tools/04_VSCode/README.md" class="btn">VSCode</a>
+            <a href="Tools/05_Jenkins/README.md" class="btn">Jenkins</a>
+            <a href="Tools/06_Kubernetes/README.md" class="btn">Kubernetes</a>
+            <a href="Tools/07_Terraform/README.md" class="btn">Terraform</a>
+            <a href="Tools/08_OpenWebUI/README.md" class="btn">OpenWebUI</a>
+            <a href="Tools/09_AnythingLLM/README.md" class="btn">AnythingLLM</a>
+            <a href="Tools/10_Postman/README.md" class="btn">Postman</a>
+            <a href="Tools/11_Ansible/README.md" class="btn">Ansible</a>
+            <a href="Tools/12_Helm/README.md" class="btn">Helm</a>
+            <a href="Tools/13_AWS_CLI/README.md" class="btn">AWS CLI</a>
+            <a href="Tools/14_Azure_CLI/README.md" class="btn">Azure CLI</a>
         </div>
 
         <h2>APIs</h2>
         <div class="btn-container">
-            <a href="https://www.coinapi.io/" class="btn">CoinAPI</a>
-            <a href="https://etherscan.io/apis" class="btn">Etherscan API</a>
-            <a href="https://www.blockchain.com/api" class="btn">Blockchain.com API</a>
-            <a href="https://www.coingecko.com/en/api" class="btn">CoinGecko API</a>
-            <a href="https://nomics.com/docs/" class="btn">Nomics API</a>
-            <a href="https://developers.facebook.com/docs/graph-api" class="btn">Facebook Graph API</a>
-            <a href="https://developers.facebook.com/docs/instagram-api" class="btn">Instagram Graph API</a>
-            <a href="https://www.tensorflow.org/tfx/guide/serving" class="btn">TensorFlow Serving</a>
-            <a href="https://huggingface.co/transformers/" class="btn">Hugging Face Transformers</a>
+            <a href="APIs/01_CoinAPI/README.md" class="btn">CoinAPI</a>
+            <a href="APIs/02_Etherscan/README.md" class="btn">Etherscan</a>
+            <a href="APIs/03_Blockchain.com/README.md" class="btn">Blockchain.com</a>
+            <a href="APIs/04_CoinGecko/README.md" class="btn">CoinGecko</a>
+            <a href="APIs/05_Nomics/README.md" class="btn">Nomics</a>
+            <a href="APIs/06_Facebook_Graph/README.md" class="btn">Facebook Graph</a>
+            <a href="APIs/07_Instagram_Graph/README.md" class="btn">Instagram Graph</a>
+            <a href="APIs/08_TensorFlow_Serving/README.md" class="btn">TensorFlow Serving</a>
+            <a href="APIs/09_Hugging_Face_Transformers/README.md" class="btn">Hugging Face Transformers</a>
+            <a href="APIs/10_Twitter/README.md" class="btn">Twitter</a>
+            <a href="APIs/11_Skyscanner/README.md" class="btn">Skyscanner</a>
+            <a href="APIs/12_Amadeus/README.md" class="btn">Amadeus</a>
+            <a href="APIs/13_OpenWeatherMap/README.md" class="btn">OpenWeatherMap</a>
+            <a href="APIs/14_NASA/README.md" class="btn">NASA</a>
         </div>
 
         <div class="icon-section">
