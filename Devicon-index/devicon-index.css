@@ -1,5 +1,3 @@
-/* devicon-index.css */
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -21,34 +19,6 @@ h1, h2 {
     color: #333;
 }
 
-.icon-section {
-    margin-bottom: 40px;
-}
-
-.icon-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.icon-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 120px;
-    text-align: center;
-}
-
-.icon-item i {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.icon-item span {
-    font-size: 14px;
-}
-
 .btn-container {
     display: flex;
     flex-wrap: wrap;
@@ -65,22 +35,50 @@ h1, h2 {
     border-radius: 5px;
 }
 
-.btn:hover {
-    background-color: #0056b3;
-}
-
-header {
-    text-align: center;
+.icon-section {
     margin-bottom: 40px;
 }
 
-h1 {
-    font-family: 'Lobster', cursive;
-    font-size: 3em;
-    color: #333;
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-p {
-    font-size: 1.2em;
-    line-height: 1.6;
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.icon-item i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.icon-item span {
+    font-size: 14px;
+    color: #555;
+}
+
+.icon-item:hover {
+    transform: scale(1.1);
+}
+
+.section-title {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5em;
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.section-content {
+    text-align: center;
+    margin-bottom: 40px;
 }
