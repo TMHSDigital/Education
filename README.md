@@ -79,25 +79,13 @@
 
 ---
 
----
-
----
-
----
-
----
-
----
-
----
-
----
-
 <h4 align="center">Contributions</h4>
 <p align="center">
   Contributions, issues, and feature requests are welcome!<br>
   Give a ⭐️ if you like this project!
 </p>
+
+---
 
 <div align="center">
   
