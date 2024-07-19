@@ -1,0 +1,120 @@
+/* landing-page.css */
+
+/* General styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center; /* Center-align all text */
+}
+
+/* Container for the main content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Styles for the header */
+header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+}
+
+/* Navigation bar styles */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Styles for links within sections */
+.section a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+.section a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Button styles */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Icon section styles */
+.icon-section {
+    margin-top: 40px;
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon-item {
+    font-size: 48px;
+    text-align: center;
+}
+
+.icon-item span {
+    font-size: 14px;
+}
