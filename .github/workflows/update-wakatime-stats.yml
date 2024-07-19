@@ -1,0 +1,27 @@
+name: Update Wakatime Stats
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Runs every 30 minutes
+  push:
+    branches:
+      - main
+
+jobs:
+  update-wakatime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch Wakatime Stats
+        run: |
+          curl -H "Authorization: Bearer ${{ secrets.WAKATIME_API_KEY }}" -o wakatime-stats.json https://wakatime.com/api/v1/users/current/stats/last_7_days
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add wakatime-stats.json
+          git commit -m "Update Wakatime stats"
+          git push
