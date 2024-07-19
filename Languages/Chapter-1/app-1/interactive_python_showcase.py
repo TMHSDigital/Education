@@ -1,13 +1,12 @@
 import sys
+import random
+import time
+from datetime import datetime
 
 # Check Python version
 if sys.version_info[0] < 3 or (sys.version_info[0] == 3 and sys.version_info[1] < 6):
     print("This script requires Python 3.6 or higher.")
     sys.exit(1)
-
-import random
-import time
-from datetime import datetime
 
 # Try to import matplotlib, but continue if it's not available
 try:
@@ -16,6 +15,16 @@ try:
 except ImportError:
     print("matplotlib is not installed. Visualization features will be disabled.")
     matplotlib_available = False
+except Exception as e:
+    print(f"An error occurred while importing matplotlib: {e}")
+    matplotlib_available = False
+else:
+    from matplotlib.figure import Figure
+    from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+
+    # Access the missing attributes
+    Figure
+    FigureCanvas
 
 class PythonShowcase:
     def __init__(self):
@@ -65,40 +74,31 @@ class PythonShowcase:
             time.sleep(1)
         print("\rCountdown complete!      ")
 
-    def run_showcase(self):
-        self.print_fancy_header("Welcome to Python Showcase")
-        print("This script demonstrates various Python features with visual enhancements.")
-
-        # Data generation and analysis
+    def demonstrate_data_analysis(self):
         self.generate_data()
         avg, max_val, min_val = self.analyze_data()
-
         print(f"\nGenerated data: {self.data}")
         print(f"Average: {avg:.2f}")
         print(f"Maximum: {max_val}")
         print(f"Minimum: {min_val}")
 
-        # Visualizing data
-        self.print_fancy_header("Data Visualization")
-        self.visualize_data()
-
-        # Demonstrating list comprehension and lambda functions
-        self.print_fancy_header("Advanced Python Features")
+    def demonstrate_advanced_features(self):
         even_squares = [x**2 for x in self.data if x % 2 == 0]
         print(f"Squares of even numbers: {even_squares}")
-
+        avg = sum(self.data) / len(self.data)
         sorted_data = sorted(self.data, key=lambda x: abs(x - avg))
         print(f"Data sorted by distance from mean: {sorted_data}")
 
-        # Demonstrating error handling
-        self.print_fancy_header("Error Handling")
+    def demonstrate_error_handling(self):
         try:
             result = 10 / 0
+            print(f"Result: {result}")  # This line demonstrates using the result variable
         except ZeroDivisionError as e:
-            print(f"Caught an error: {e}")
+            print(f"Caught a division error: {e}")
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
 
-        # Demonstrating context manager
-        self.print_fancy_header("Context Manager")
+    def demonstrate_file_operations(self):
         try:
             with open("python_demo_log.txt", "w") as f:
                 f.write(f"Log created at {datetime.now()}\n")
@@ -107,12 +107,46 @@ class PythonShowcase:
         except IOError as e:
             print(f"Unable to create log file: {e}")
 
-        # Interactive countdown
-        self.print_fancy_header("Interactive Countdown")
-        self.countdown_timer(5)
-
-        self.print_fancy_header("Thank You!")
-        print("This concludes the Python Showcase. Explore the code to learn more!")
+    def run_showcase(self):
+        while True:
+            self.print_fancy_header("Python Showcase Menu")
+            print("1. Data Analysis")
+            print("2. Data Visualization")
+            print("3. Advanced Python Features")
+            print("4. Error Handling")
+            print("5. File Operations")
+            print("6. Countdown Timer")
+            print("7. Exit")
+            
+            choice = input("Enter your choice (1-7): ")
+            
+            if choice == '1':
+                self.print_fancy_header("Data Analysis")
+                self.demonstrate_data_analysis()
+            elif choice == '2':
+                self.print_fancy_header("Data Visualization")
+                self.visualize_data()
+            elif choice == '3':
+                self.print_fancy_header("Advanced Python Features")
+                self.demonstrate_advanced_features()
+            elif choice == '4':
+                self.print_fancy_header("Error Handling")
+                self.demonstrate_error_handling()
+            elif choice == '5':
+                self.print_fancy_header("File Operations")
+                self.demonstrate_file_operations()
+            elif choice == '6':
+                self.print_fancy_header("Countdown Timer")
+                seconds = int(input("Enter number of seconds for countdown: "))
+                self.countdown_timer(seconds)
+            elif choice == '7':
+                self.print_fancy_header("Thank You!")
+                print("This concludes the Python Showcase. Explore the code to learn more!")
+                break
+            else:
+                print("Invalid choice. Please enter a number between 1 and 7.")
+            
+            input("\nPress Enter to continue...")
 
 if __name__ == "__main__":
     try:
