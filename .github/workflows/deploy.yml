@@ -22,30 +22,9 @@ exclude:
   - node_modules
   - vendor/bundle
   - vendor/cache
-  - vendor/gems
-  - vendor/ruby
 
-# Include these files in the site output
-include:
-  - _pages
-  - _posts
-  - _data
-  - _drafts
-
-# Enable Jekyll to handle files normally ignored in a Jekyll project
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-      permalink: /:categories/:title/
-
-# Options
-paginate: 5
-paginate_path: "/page:num/"
-
-# URL for your social media profiles
-social:
-  twitter: https://twitter.com/<your-twitter-handle>
-  github: https://github.com/TMHSDigital
-  linkedin: https://www.linkedin.com/in/<your-linkedin-username>
+# Social links
+author:
+  name: Thomas Mathes
+  email: your-email@example.com
+  linkedin: thomasmathes1
