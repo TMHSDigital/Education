@@ -1,7 +1,21 @@
+import sys
+
+# Check Python version
+if sys.version_info[0] < 3 or (sys.version_info[0] == 3 and sys.version_info[1] < 6):
+    print("This script requires Python 3.6 or higher.")
+    sys.exit(1)
+
 import random
 import time
 from datetime import datetime
-import matplotlib.pyplot as plt
+
+# Try to import matplotlib, but continue if it's not available
+try:
+    import matplotlib.pyplot as plt
+    matplotlib_available = True
+except ImportError:
+    print("matplotlib is not installed. Visualization features will be disabled.")
+    matplotlib_available = False
 
 class PythonShowcase:
     def __init__(self):
@@ -27,14 +41,21 @@ class PythonShowcase:
 
     def visualize_data(self):
         """Create a simple plot of the data."""
-        plt.figure(figsize=(10, 6))
-        plt.plot(self.data, marker='o')
-        plt.title("Random Data Visualization")
-        plt.xlabel("Index")
-        plt.ylabel("Value")
-        plt.grid(True)
-        plt.savefig("data_visualization.png")
-        plt.close()
+        if matplotlib_available:
+            try:
+                plt.figure(figsize=(10, 6))
+                plt.plot(self.data, marker='o')
+                plt.title("Random Data Visualization")
+                plt.xlabel("Index")
+                plt.ylabel("Value")
+                plt.grid(True)
+                plt.savefig("data_visualization.png")
+                plt.close()
+                print("A plot has been saved as 'data_visualization.png'")
+            except Exception as e:
+                print(f"An error occurred while creating the plot: {e}")
+        else:
+            print("Visualization skipped: matplotlib is not available.")
 
     @staticmethod
     def countdown_timer(seconds):
@@ -60,7 +81,6 @@ class PythonShowcase:
         # Visualizing data
         self.print_fancy_header("Data Visualization")
         self.visualize_data()
-        print("A plot has been saved as 'data_visualization.png'")
 
         # Demonstrating list comprehension and lambda functions
         self.print_fancy_header("Advanced Python Features")
@@ -79,10 +99,13 @@ class PythonShowcase:
 
         # Demonstrating context manager
         self.print_fancy_header("Context Manager")
-        with open("python_demo_log.txt", "w") as f:
-            f.write(f"Log created at {datetime.now()}\n")
-            f.write(f"Data analyzed: {self.data}\n")
-        print("Log file 'python_demo_log.txt' has been created.")
+        try:
+            with open("python_demo_log.txt", "w") as f:
+                f.write(f"Log created at {datetime.now()}\n")
+                f.write(f"Data analyzed: {self.data}\n")
+            print("Log file 'python_demo_log.txt' has been created.")
+        except IOError as e:
+            print(f"Unable to create log file: {e}")
 
         # Interactive countdown
         self.print_fancy_header("Interactive Countdown")
@@ -92,5 +115,9 @@ class PythonShowcase:
         print("This concludes the Python Showcase. Explore the code to learn more!")
 
 if __name__ == "__main__":
-    showcase = PythonShowcase()
-    showcase.run_showcase()
+    try:
+        showcase = PythonShowcase()
+        showcase.run_showcase()
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        print("Please report this issue along with the error message above.")
