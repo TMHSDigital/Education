@@ -99,6 +99,12 @@
   Give a ⭐️ if you like this project!
 </p>
 
+<div align="center">
+  
+![Alt](https://repobeats.axiom.co/api/embed/3bd1c3608b237486de9c6a1aa2171479aaa6f03d.svg "Repobeats analytics image")  
+
+</div>
+
 ---
 
 <h4 align="center">📜 License</h4>
