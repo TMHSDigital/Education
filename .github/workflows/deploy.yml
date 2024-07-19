@@ -1,30 +1,51 @@
-name: Deploy
+# Site settings
+title: Educational Repository
+description: > # this means to ignore newlines until "baseurl:"
+  Explore the chapters and learn various programming languages, tools, and APIs.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://tmhsdigital.github.io" # the base hostname & protocol for your site
 
-on:
-  push:
-    branches:
-      - main  # Change this to your default branch name if different
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+# GitHub Pages settings
+repository: TMHSDigital/Education
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
+  - vendor/cache
+  - vendor/gems
+  - vendor/ruby
 
-      - name: Install dependencies
-        run: npm install
+# Include these files in the site output
+include:
+  - _pages
+  - _posts
+  - _data
+  - _drafts
 
-      - name: Build
-        run: npm run build
+# Enable Jekyll to handle files normally ignored in a Jekyll project
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+      permalink: /:categories/:title/
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+# Options
+paginate: 5
+paginate_path: "/page:num/"
+
+# URL for your social media profiles
+social:
+  twitter: https://twitter.com/<your-twitter-handle>
+  github: https://github.com/TMHSDigital
+  linkedin: https://www.linkedin.com/in/<your-linkedin-username>
