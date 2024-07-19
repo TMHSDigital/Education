@@ -1,5 +1,101 @@
 # Education/
 
+# Outline of the Educational Repository
+
+## Root Directory Structure
+- .github
+- API
+- build
+- Devicon-index
+  - devicon-index.css
+  - index.html
+- Languages
+  - Chapter-1
+  - Chapter-2
+  - Chapter-3
+  - Chapter-4
+  - Chapter-5
+  - Chapter-6
+  - Chapter-7
+  - Chapter-8
+  - Chapter-9
+  - Chapter-10
+  - Chapter-11
+  - Chapter-12
+  - chapter-styles.css
+- node_modules
+- sections-html
+  - landing-page.html
+  - languages.html
+  - tools.html
+  - apis.html
+  - main-technologies-used.html
+  - powered-by.html
+- Tools
+- .gitignore
+- index.html
+- LICENSE
+- outline.md
+- sections.css
+- site-styles.css
+
+## Description of Key Files and Folders
+
+### Root Directory
+- **.github**: Contains GitHub-related configurations.
+- **API**: Directory for API-related files.
+- **build**: Directory for build-related files.
+- **Devicon-index**: Directory for Devicon icons and related HTML/CSS.
+  - `devicon-index.css`: Stylesheet for Devicon icons.
+  - `index.html`: HTML file for Devicon index.
+- **Languages**: Directory for different language chapters.
+  - `Chapter-1` to `Chapter-12`: Directories for individual chapters.
+  - `chapter-styles.css`: Stylesheet for language chapters.
+- **node_modules**: Directory for Node.js modules.
+- **sections-html**: Directory for HTML sections of the main page.
+  - `landing-page.html`: HTML for the landing page.
+  - `languages.html`: HTML for the languages section.
+  - `tools.html`: HTML for the tools section.
+  - `apis.html`: HTML for the APIs section.
+  - `main-technologies-used.html`: HTML for the main technologies used section.
+  - `powered-by.html`: HTML for the powered-by section.
+- **Tools**: Directory for tools-related files.
+- **.gitignore**: Git ignore file.
+- **index.html**: Main HTML file that includes other sections.
+- **LICENSE**: License file for the repository.
+- **outline.md**: This outline document.
+- **sections.css**: Stylesheet for sections.
+- **site-styles.css**: General stylesheet for the site.
+
+## Description of Sections
+
+### Landing Page
+- **landing-page.html**: Welcome message and introduction.
+
+### Languages
+- **languages.html**: Links to various programming languages.
+
+### Tools
+- **tools.html**: Links to various tools used.
+
+### APIs
+- **apis.html**: Links to various APIs used.
+
+### Main Technologies Used
+- **main-technologies-used.html**: Dropdown for main technologies used, excluding languages, tools, and APIs.
+
+### Powered By
+- **powered-by.html**: Dropdown for technologies and platforms powering the site.
+
+## Stylesheets
+- **chapter-styles.css**: Specific styles for language chapters.
+- **devicon-index.css**: Styles for Devicon icons.
+- **sections.css**: Styles for section HTML files.
+- **site-styles.css**: General site styles.
+
+
+
+
 ## Languages/
 ### chapter-styles.css
 ### Chapter-1/
