@@ -1,30 +1,30 @@
-# Site settings
-title: Educational Repository
-description: > # this means to ignore newlines until "baseurl:"
-  Explore the chapters and learn various programming languages, tools, and APIs.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tmhsdigital.github.io" # the base hostname & protocol for your site
+name: Deploy
 
-# Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
+on:
+  push:
+    branches:
+      - version-1  # Change this to your default branch name if different
 
-# GitHub Pages settings
-repository: TMHSDigital/Education
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle
-  - vendor/cache
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
 
-# Social links
-author:
-  name: Thomas Mathes
-  email: your-email@example.com
-  linkedin: thomasmathes1
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          publish_dir: ./build
