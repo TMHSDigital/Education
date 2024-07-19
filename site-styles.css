@@ -1,64 +1,71 @@
-/* Global Styles */
+/* site-styles.css */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  nav {
-    background-color: #333;
-    overflow: hidden;
-  }
-  
-  nav a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  section {
     padding: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: white;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
-  h1, h2 {
+    margin-bottom: 40px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+nav a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.icon-section {
+    margin-top: 40px;
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
     text-align: center;
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  li {
-    margin: 5px 0;
-  }
-  
-  button {
+}
+
+.icon-item i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.icon-item span {
+    font-size: 14px;
+}
+
+button.btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
@@ -67,47 +74,8 @@ body {
     border-radius: 5px;
     border: none;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button.btn:hover {
     background-color: #0056b3;
-  }
-  
-  .icon-section {
-    margin-top: 40px;
-  }
-  
-  .icon-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-  
-  .icon-item {
-    font-size: 48px;
-    text-align: center;
-  }
-  
-  /* Specific section styling */
-  .section {
-    padding: 20px;
-  }
-  
-  .section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .section a {
-    display: inline-block;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .section a:hover {
-    text-decoration: underline;
-  }
-  
+}

@@ -5,78 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Java</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    h1 {
-      font-family: 'Lobster', cursive;
-      font-size: 3em;
-      color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    p {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-    h2 {
-      font-size: 2em;
-      margin-top: 20px;
-      color: #444;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    nav {
-      margin-bottom: 20px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #007BFF;
-      font-weight: bold;
-      margin: 0 10px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 1em;
-      font-weight: bold;
-      color: #fff;
-      background-color: #007BFF;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .btn:hover {
-      background-color: #0056b3;
-    }
-    .resource-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="../chapter-styles.css">
 </head>
 <body>
   <header>
@@ -91,21 +20,20 @@
     </nav>
     <section id="intro">
       <h2>Introduction to Java</h2>
-      <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.</p>
-      <pre><code class="language-java">public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}</code></pre>
-      <a href="https://www.oracle.com/java/" target="_blank" class="btn">Learn More</a>
+      <p>Java is a popular, high-level programming language known for its portability, security, and robustness.</p>
+      <pre><code class="language-java">public class Main { public static void main(String[] args) { System.out.println("Hello, World!"); } }</code></pre>
+      <a href="https://www.java.com/" target="_blank" class="btn">Learn More</a>
     </section>
     <section id="getting-started">
       <h2>Getting Started</h2>
       <p>To get started with Java, follow the steps below:</p>
       <ul>
-        <li>Step 1: Install the Java Development Kit (JDK) from the official <a href="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html" target="_blank">Oracle website</a>.</li>
-        <li>Step 2: Set up your development environment using an IDE like <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a> or <a href="https://eclipse.org/" target="_blank">Eclipse</a>.</li>
-        <li>Step 3: Write your first Java program in a file with a `.java` extension and run it using the command <code>javac filename.java</code> followed by <code>java filename</code>.</li>
+        <li>Step 1: Install Java Development Kit (JDK) from the official <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">Java website</a>.</li>
+        <li>Step 2: Set up your development environment using an IDE like <a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ IDEA</a> or <a href="https://netbeans.apache.org/" target="_blank">NetBeans</a>.</li>
+        <li>Step 3: Write your first Java program in a file with a `.java` extension and run it using the command:
+          <pre><code>javac filename.java
+java filename</code></pre>
+        </li>
       </ul>
     </section>
     <section id="advanced">
@@ -120,11 +48,10 @@
     <section id="resources">
       <h2>Java Resources</h2>
       <div class="resource-buttons">
-        <a href="https://docs.oracle.com/en/java/" target="_blank" class="btn">Official Documentation</a>
-        <a href="https://www.geeksforgeeks.org/java/" target="_blank" class="btn">GeeksforGeeks</a>
-        <a href="https://www.tutorialspoint.com/java/index.htm" target="_blank" class="btn">TutorialsPoint</a>
+        <a href="https://docs.oracle.com/javase/8/docs/" target="_blank" class="btn">Official Java Documentation</a>
+        <a href="https://www.javaworld.com/" target="_blank" class="btn">JavaWorld</a>
+        <a href="https://www.learnjavaonline.org/" target="_blank" class="btn">Learn Java</a>
         <a href="https://stackoverflow.com/questions/tagged/java" target="_blank" class="btn">Stack Overflow</a>
-        <a href="https://mvnrepository.com/" target="_blank" class="btn">Maven Repository</a>
         <a href="https://github.com/java" target="_blank" class="btn">Java on GitHub</a>
       </div>
     </section>

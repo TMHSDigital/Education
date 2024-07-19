@@ -3,90 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../site-styles.css">
-    <link rel="stylesheet" href="../sections.css">
     <title>Main Technologies Used</title>
-    <script>
-        function toggleSection(id) {
-            var element = document.getElementById(id);
-            if (element.style.display === "none") {
-                element.style.display = "block";
-            } else {
-                element.style.display = "none";
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="../site-styles.css">
 </head>
 <body>
-    <div class="section">
-        <h2>Main Technologies Used</h2>
-        <button onclick="toggleSection('technologies')">Toggle Technologies</button>
-        <div id="technologies" style="display:none;">
+    <div class="container">
+        <header>
+            <h1>Main Technologies Used</h1>
+        </header>
+        <button id="toggle-technologies" class="btn">Toggle Technologies</button>
+        <div id="technologies-list" style="display: none;">
             <div class="icon-section">
                 <div class="icon-list">
-                    <div class="icon-item">
-                        <i class="devicon-github-original colored"></i>
-                        <span>GitHub</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-gitlab-plain colored"></i>
-                        <span>GitLab</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-bitbucket-original colored"></i>
-                        <span>Bitbucket</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-vscode-plain colored"></i>
-                        <span>VS Code</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-docker-plain colored"></i>
-                        <span>Docker</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-azure-plain colored"></i>
-                        <span>Azure</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-amazonwebservices-original colored"></i>
-                        <span>AWS</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-github-pages-plain colored"></i>
-                        <span>GitHub Pages</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-html5-plain colored"></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-css3-plain colored"></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-javascript-plain colored"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-nodejs-plain colored"></i>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-express-original colored"></i>
-                        <span>Express</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-mongodb-plain colored"></i>
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="icon-item">
-                        <i class="devicon-bootstrap-plain colored"></i>
-                        <span>Bootstrap</span>
-                    </div>
+                    <div class="icon-item"><i class="devicon-github-plain colored"></i><br>GitHub</div>
+                    <div class="icon-item"><i class="devicon-git-plain colored"></i><br>Git</div>
+                    <div class="icon-item"><i class="devicon-visualstudio-plain colored"></i><br>VS Code</div>
+                    <div class="icon-item"><i class="devicon-docker-plain colored"></i><br>Docker</div>
+                    <div class="icon-item"><i class="devicon-azure-plain colored"></i><br>Azure</div>
+                    <div class="icon-item"><i class="devicon-amazonwebservices-plain colored"></i><br>AWS</div>
                 </div>
             </div>
         </div>
+        <script>
+            document.getElementById('toggle-technologies').addEventListener('click', function() {
+                var list = document.getElementById('technologies-list');
+                if (list.style.display === 'none') {
+                    list.style.display = 'block';
+                } else {
+                    list.style.display = 'none';
+                }
+            });
+        </script>
     </div>
 </body>
 </html>
