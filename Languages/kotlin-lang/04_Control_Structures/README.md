@@ -1,35 +1,28 @@
 # Control Structures
 
+Kotlin supports standard control structures such as if statements and loops.
+
 ## Conditional Statements
 
-```java
-int x = 10;
-if (x > 5) {
-    System.out.println("x is greater than 5");
-} else if (x == 5) {
-    System.out.println("x is 5");
-} else {
-    System.out.println("x is less than 5");
+```kotlin
+fun main() {
+    val x = 10
+    if (x > 5) {
+        println("x is greater than 5")
+    } else if (x == 5) {
+        println("x is 5")
+    } else {
+        println("x is less than 5")
+    }
 }
 ```
 
 ## Loops
 
-### For Loop
-
-```java
-for (int i = 0; i < 5; i++) {
-    System.out.println(i);
+```kotlin
+fun main() {
+    for (i in 1..5) {
+        println(i)
+    }
 }
 ```
-
-### While Loop
-
-```java
-int count = 0;
-while (count < 5) {
-    System.out.println(count);
-    count++;
-}
-```
-

@@ -1,60 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Java</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../chapter-styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Kotlin - Educational Repository</title>
+    <link rel="stylesheet" href="../chapter-styles.css">
+    <style>
+        .code-example {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Java</h1>
-  </header>
-  <div class="container">
-    <nav>
-      <a href="/Education/index.html">Home</a>
-      <a href="#intro">Introduction</a>
-      <a href="#getting-started">Getting Started</a>
-      <a href="#advanced">Advanced Topics</a>
-    </nav>
-    <section id="intro">
-      <h2>Introduction to Java</h2>
-      <p>Java is a popular, high-level programming language known for its portability, security, and robustness.</p>
-      <pre><code class="language-java">public class Main { public static void main(String[] args) { System.out.println("Hello, World!"); } }</code></pre>
-      <a href="https://www.java.com/" target="_blank" rel="noopener" class="btn">Learn More</a>
-    </section>
-    <section id="getting-started">
-      <h2>Getting Started</h2>
-      <p>To get started with Java, follow the steps below:</p>
-      <ul>
-        <li>Step 1: Install Java Development Kit (JDK) from the official <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank" rel="noopener">Java website</a>.</li>
-        <li>Step 2: Set up your development environment using an IDE like <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noopener">IntelliJ IDEA</a> or <a href="https://netbeans.apache.org/" target="_blank" rel="noopener">NetBeans</a>.</li>
-        <li>Step 3: Write your first Java program in a file with a `.java` extension and run it using the command:
-          <pre><code>javac filename.java
-java filename</code></pre>
-        </li>
-      </ul>
-    </section>
-    <section id="advanced">
-      <h2>Advanced Topics</h2>
-      <p>Once you are comfortable with the basics, you can move on to more advanced topics:</p>
-      <ul>
-        <li>Topic 1: Advanced Java syntax</li>
-        <li>Topic 2: Java libraries and frameworks</li>
-        <li>Topic 3: Best practices and design patterns in Java</li>
-      </ul>
-    </section>
-    <section id="resources">
-      <h2>Java Resources</h2>
-      <div class="resource-buttons">
-        <a href="https://docs.oracle.com/javase/8/docs/" target="_blank" rel="noopener" class="btn">Official Java Documentation</a>
-        <a href="https://www.javaworld.com/" target="_blank" rel="noopener" class="btn">JavaWorld</a>
-        <a href="https://www.learnjavaonline.org/" target="_blank" rel="noopener" class="btn">Learn Java</a>
-        <a href="https://stackoverflow.com/questions/tagged/java" target="_blank" rel="noopener" class="btn">Stack Overflow</a>
-        <a href="https://github.com/java" target="_blank" rel="noopener" class="btn">Java on GitHub</a>
-      </div>
-    </section>
-  </div>
+    <div class="chapter-container">
+        <nav>
+            <a href="../../index.html">Home</a> |
+            <a href="#introduction">Introduction</a> |
+            <a href="#why-learn">Why Learn Kotlin</a> |
+            <a href="#applications">Applications</a>
+        </nav>
+
+        <h1>Introduction to Kotlin</h1>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Kotlin is a modern programming language that makes developers happier. It is concise, safe, interoperable, and tool-friendly.</p>
+        </section>
+
+        <section id="why-learn">
+            <h2>Why Learn Kotlin?</h2>
+            <ul>
+                <li>Modern and expressive syntax</li>
+                <li>Safe and null-pointer free</li>
+                <li>Interoperable with Java</li>
+                <li>Versatile (can be used for Android, server-side, and more)</li>
+            </ul>
+        </section>
+
+        <section id="applications">
+            <h2>Applications of Kotlin</h2>
+            <ul>
+                <li>Android Development</li>
+                <li>Server-side Development</li>
+                <li>Web Development</li>
+                <li>Data Science</li>
+            </ul>
+        </section>
+
+        <section id="code-example">
+            <h2>Kotlin Code Example</h2>
+            <div class="code-example">
+                <pre><code>
+fun main() {
+    println("Hello, Kotlin!")
+    
+    // Example of a simple function
+    fun greet(name: String) = "Hello, $name!"
+    
+    val greeting = greet("Developer")
+    println(greeting)
+}
+                </code></pre>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h2>Additional Resources</h2>
+            <ul>
+                <li><a href="https://kotlinlang.org/docs/home.html" target="_blank">Official Kotlin Documentation</a></li>
+                <li><a href="https://play.kotlinlang.org/" target="_blank">Kotlin Playground</a></li>
+                <li><a href="https://developer.android.com/kotlin" target="_blank">Android Kotlin Documentation</a></li>
+            </ul>
+        </section>
+
+        <div class="navigation">
+            <a href="../Chapter-10/index.html" class="nav-button">Previous: Java</a>
+            <a href="../Chapter-12/index.html" class="nav-button">Next: JavaScript</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Educational Repository. All rights reserved.</p>
+    </footer>
 </body>
 </html>

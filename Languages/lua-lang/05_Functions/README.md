@@ -1,88 +1,55 @@
 # Functions
 
-Functions in Go are first-class citizens. They can be assigned to variables, passed as arguments, and returned from other functions.
+Functions in Lua are first-class values, which means they can be stored in variables, passed as arguments to other functions, and returned as values from other functions.
 
 ## Defining Functions
 
-```go
-package main
-
-import "fmt"
-
-func greet(name string) {
-    fmt.Println("Hello, " + name + "!")
-}
-
-func main() {
-    greet("World")
-}
+```lua
+function greet(name)
+end
 ```
 
 ## Function Arguments
 
-```go
-package main
-
-import "fmt"
-
-func add(a int, b int) int {
+```lua
+function add(a, b)
     return a + b
-}
+end
 
-func main() {
-    fmt.Println(add(2, 3))
-}
+print(add(2, 3))
 ```
 
 ## Return Statement
 
-```go
-package main
-
-import "fmt"
-
-func square(x int) int {
+```lua
+function square(x)
     return x * x
-}
+end
 
-func main() {
-    result := square(4)
-    fmt.Println(result)
-}
+result = square(4)
+print(result)
 ```
 
 ## Anonymous Functions
 
-```go
-package main
+```lua
+local function anonymous_greet(name)
+end
 
-import "fmt"
-
-func main() {
-    greet := func(name string) {
-        fmt.Println("Hello, " + name + "!")
-    }
-
-    greet("John")
-}
+anonymous_greet("John")
 ```
 
 ## Higher-Order Functions
 
-```go
-package main
+```lua
+function apply(func, value)
+    return func(value)
+end
 
-import "fmt"
-
-func apply(funcToApply func(int) int, value int) int {
-    return funcToApply(value)
-}
-
-func increment(x int) int {
+function increment(x)
     return x + 1
-}
+end
 
-func main() {
-    fmt.Println(apply(increment, 5))
-}
+print(apply(increment, 5))
 ```
+

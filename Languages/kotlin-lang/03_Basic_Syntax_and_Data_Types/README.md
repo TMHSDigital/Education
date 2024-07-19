@@ -1,42 +1,23 @@
 # Basic Syntax and Data Types
 
+Kotlin has a concise and expressive syntax. It supports a variety of data types and basic operators.
+
 ## Variables and Data Types
 
-```java
-// Integer
-int x = 5;
+```kotlin
+fun main() {
+    // Integer
+    var x: Int = 5
 
-// Float
-float y = 3.14f;
+    // Float
+    var y: Float = 3.14F
 
-// String
-String name = "Java";
+    // String
+    var name: String = "Kotlin"
 
-// Boolean
-boolean isActive = true;
+    // Boolean
+    var isActive: Boolean = true
+
+    println("x: $x, y: $y, name: $name, isActive: $isActive")
+}
 ```
-
-## Basic Operators
-
-```java
-// Arithmetic operators
-int a = 10;
-int b = 5;
-System.out.println(a + b);  // Addition
-System.out.println(a - b);  // Subtraction
-
-// Comparison operators
-System.out.println(a > b);  // Greater than
-System.out.println(a == b); // Equal to
-```
-
-## Comments
-
-```java
-// This is a comment
-/*
-This is a
-multiline comment
-*/
-```
-

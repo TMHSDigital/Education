@@ -1,18 +1,18 @@
 # Exception Handling
 
-## Try-Catch Block
+Kotlin provides a robust exception handling mechanism.
 
-```java
-public class Example {
-    public static void main(String[] args) {
-        try {
-            int result = 10 / 0;
-        } catch (ArithmeticException e) {
-            System.out.println("Cannot divide by zero");
-        } finally {
-            System.out.println("This will always execute");
-        }
+## Basic Exception Handling
+
+```kotlin
+fun main() {
+    try {
+        val result = 10 / 0
+        println(result)
+    } catch (e: ArithmeticException) {
+        println("Cannot divide by zero")
+    } finally {
+        println("This will always execute")
     }
 }
 ```
-

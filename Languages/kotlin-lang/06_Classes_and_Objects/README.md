@@ -1,34 +1,14 @@
 # Classes and Objects
 
-## Defining Classes
+Kotlin is an object-oriented programming language. You can define classes and create objects in Kotlin.
 
-```java
-public class Person {
-    String name;
-    int age;
+## Defining a Class
 
-    // Constructor
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
+```kotlin
+class Person(val name: String, var age: Int)
 
-    // Method
-    public void display() {
-        System.out.println("Name: " + name + ", Age: " + age);
-    }
+fun main() {
+    val person = Person("John", 30)
+    println("Name: ${person.name}, Age: ${person.age}")
 }
 ```
-
-## Creating Objects
-
-```java
-public class Example {
-    public static void main(String[] args) {
-        // Creating an object
-        Person person = new Person("Alice", 25);
-        person.display();
-    }
-}
-```
-

@@ -1,42 +1,50 @@
 # Basic Syntax and Data Types
 
+Ruby has an elegant and expressive syntax that makes it easy to write clean and maintainable code.
+
 ## Variables and Data Types
 
-```javascript
-// Integer
-let x = 5;
+```ruby
+x = 5          # Integer
+y = 3.14       # Float
+name = "Ruby"  # String
+is_active = true  # Boolean
 
-// Float
-let y = 3.14;
+# Array
+arr = [1, 2, 3]
 
-// String
-let name = "JavaScript";
+# Hash
+hash = {name: "Ruby", age: 25}
 
-// Boolean
-let isActive = true;
+puts x, y, name, is_active, arr, hash
 ```
 
 ## Basic Operators
 
-```javascript
-// Arithmetic operators
-let a = 10;
-let b = 5;
-console.log(a + b);  // Addition
-console.log(a - b);  // Subtraction
+```ruby
+a = 10
+b = 5
 
-// Comparison operators
-console.log(a > b);  // Greater than
-console.log(a === b); // Equal to
+# Arithmetic operators
+puts a + b  # Addition
+puts a - b  # Subtraction
+
+# Comparison operators
+puts a > b  # Greater than
+puts a == b # Equal to
+
+# Logical operators
+puts a > b && b < 10 # Logical AND
+puts a > b || b > 10 # Logical OR
 ```
 
 ## Comments
 
-```javascript
-// This is a comment
-/*
+```ruby
+# This is a comment
+=begin
 This is a
 multiline comment
-*/
+=end
+puts "Hello, Ruby!"
 ```
-

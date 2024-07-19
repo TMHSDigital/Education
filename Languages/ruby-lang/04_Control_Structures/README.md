@@ -1,35 +1,46 @@
 # Control Structures
 
+Ruby supports standard control structures such as if statements and loops.
+
 ## Conditional Statements
 
-```javascript
-let x = 10;
-if (x > 5) {
-    console.log("x is greater than 5");
-} else if (x === 5) {
-    console.log("x is 5");
-} else {
-    console.log("x is less than 5");
-}
+```ruby
+x = 10
+if x > 5
+  puts "x is greater than 5"
+elsif x == 5
+  puts "x is 5"
+else
+  puts "x is less than 5"
+end
 ```
 
 ## Loops
 
-### For Loop
-
-```javascript
-for (let i = 0; i < 5; i++) {
-    console.log(i);
-}
-```
-
 ### While Loop
 
-```javascript
-let count = 0;
-while (count < 5) {
-    console.log(count);
-    count++;
-}
+```ruby
+count = 0
+while count < 5
+  puts count
+  count += 1
+end
 ```
 
+### Until Loop
+
+```ruby
+count = 0
+until count == 5
+  puts count
+  count += 1
+end
+```
+
+### For Loop
+
+```ruby
+for i in 0..4
+  puts i
+end
+```

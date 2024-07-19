@@ -1,68 +1,47 @@
 # Control Structures
 
-Go supports standard control structures such as if statements and loops.
+Lua supports standard control structures such as if statements and loops.
 
 ## Conditional Statements
 
-```go
-package main
-
-import "fmt"
-
-func main() {
-    x := 10
-    if x > 5 {
-        fmt.Println("x is greater than 5")
-    } else if x == 5 {
-        fmt.Println("x is 5")
-    } else {
-        fmt.Println("x is less than 5")
-    }
-}
+```lua
+x = 10
+if x > 5 then
+    print("x is greater than 5")
+elseif x == 5 then
+    print("x is 5")
+else
+    print("x is less than 5")
+end
 ```
 
 ## Loops
 
 ### For Loop
 
-```go
-package main
-
-import "fmt"
-
-func main() {
-    for i := 0; i < 5; i++ {
-        fmt.Println(i)
-    }
-}
+```lua
+for i = 0, 4 do
+    print(i)
+end
 ```
 
-### While Loop (simulated with for)
+### While Loop
 
-```go
-package main
-
-import "fmt"
-
-func main() {
-    count := 0
-    for count < 5 {
-        fmt.Println(count)
-        count++
-    }
-}
+```lua
+count = 0
+while count < 5 do
+    print(count)
+    count = count + 1
+end
 ```
 
-### Infinite Loop
+### Repeat-Until Loop
 
-```go
-package main
-
-import "fmt"
-
-func main() {
-    for {
-        fmt.Println("This will loop forever")
-    }
-}
+```lua
+count = 0
+repeat
+    print(count)
+    count = count + 1
+until count == 5
 ```
+

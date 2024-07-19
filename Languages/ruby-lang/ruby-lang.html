@@ -3,13 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript</title>
+  <title>Ruby</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../chapter-styles.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-family: 'Lobster', cursive;
+      font-size: 3em;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    h2 {
+      font-size: 2em;
+      margin-top: 20px;
+      color: #444;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    nav {
+      margin-bottom: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      font-weight: bold;
+      color: #fff;
+      background-color: #007BFF;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>JavaScript</h1>
+    <h1>Ruby</h1>
   </header>
   <div class="container">
     <nav>
@@ -19,39 +84,30 @@
       <a href="#advanced">Advanced Topics</a>
     </nav>
     <section id="intro">
-      <h2>Introduction to JavaScript</h2>
-      <p>JavaScript is a versatile and widely-used programming language primarily known for its role in web development.</p>
-      <pre><code class="language-javascript">console.log("Hello, World!");</code></pre>
-      <a href="https://www.javascript.com/" target="_blank" rel="noopener" class="btn">Learn More</a>
+      
+<h2>Introduction to Ruby</h2>
+<p>Ruby is a dynamic, open-source programming language with a focus on simplicity and productivity.</p>
+<pre><code class="language-ruby">puts 'Hello, World!'</code></pre>
+<a href="https://www.ruby-lang.org/" target="_blank" class="btn">Learn More</a>
+
     </section>
     <section id="getting-started">
       <h2>Getting Started</h2>
-      <p>To get started with JavaScript, follow the steps below:</p>
+      <p>To get started with Ruby, follow the steps below:</p>
       <ul>
-        <li>Step 1: Set up your development environment using an IDE like <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> or <a href="https://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">WebStorm</a>.</li>
-        <li>Step 2: Write your first JavaScript program in a file with a `.js` extension and run it using a web browser or Node.js:
-          <pre><code>node filename.js</code></pre>
-        </li>
+        <li>Step 1: Install Ruby</li>
+        <li>Step 2: Set up your development environment</li>
+        <li>Step 3: Write your first Ruby program</li>
       </ul>
     </section>
     <section id="advanced">
       <h2>Advanced Topics</h2>
       <p>Once you are comfortable with the basics, you can move on to more advanced topics:</p>
       <ul>
-        <li>Topic 1: Advanced JavaScript syntax</li>
-        <li>Topic 2: JavaScript libraries and frameworks</li>
-        <li>Topic 3: Best practices and design patterns in JavaScript</li>
+        <li>Topic 1: Advanced Ruby syntax</li>
+        <li>Topic 2: Ruby libraries and frameworks</li>
+        <li>Topic 3: Best practices and design patterns in Ruby</li>
       </ul>
-    </section>
-    <section id="resources">
-      <h2>JavaScript Resources</h2>
-      <div class="resource-buttons">
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener" class="btn">MDN JavaScript Documentation</a>
-        <a href="https://www.javascript.com/" target="_blank" rel="noopener" class="btn">JavaScript.com</a>
-        <a href="https://www.learn-js.org/" target="_blank" rel="noopener" class="btn">Learn JavaScript</a>
-        <a href="https://stackoverflow.com/questions/tagged/javascript" target="_blank" rel="noopener" class="btn">Stack Overflow</a>
-        <a href="https://github.com/javascript" target="_blank" rel="noopener" class="btn">JavaScript on GitHub</a>
-      </div>
     </section>
   </div>
 </body>

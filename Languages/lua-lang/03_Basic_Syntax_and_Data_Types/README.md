@@ -1,71 +1,51 @@
 # Basic Syntax and Data Types
 
-Go has a clean and straightforward syntax. It supports a variety of data types and basic operators.
+Lua uses a simple and straightforward syntax. It is dynamically typed, runs by interpreting bytecode for a register-based virtual machine, and has automatic memory management with incremental garbage collection.
 
 ## Variables and Data Types
 
-```go
-package main
+```lua
+-- Integer
+x = 5
 
-import "fmt"
+-- Float
+y = 3.14
 
-func main() {
-    // Integer
-    var x int = 5
+-- String
+name = "Lua"
 
-    // Float
-    var y float64 = 3.14
+-- Boolean
+isActive = true
 
-    // String
-    var name string = "Go"
-
-    // Boolean
-    var isActive bool = true
-
-    // Inferred types
-    z := 10
-    fmt.Println(x, y, name, isActive, z)
-}
+-- Nil (similar to null)
+z = nil
 ```
 
 ## Basic Operators
 
-```go
-package main
+```lua
+-- Arithmetic operators
+a = 10
+b = 5
+print(a + b)  -- Addition
+print(a - b)  -- Subtraction
 
-import "fmt"
+-- Comparison operators
+print(a > b)  -- Greater than
+print(a == b) -- Equal to
 
-func main() {
-    a := 10
-    b := 5
-
-    // Arithmetic operators
-    fmt.Println(a + b)  // Addition
-    fmt.Println(a - b)  // Subtraction
-
-    // Comparison operators
-    fmt.Println(a > b)  // Greater than
-    fmt.Println(a == b) // Equal to
-
-    // Logical operators
-    fmt.Println(a > b && b < 10) // Logical AND
-    fmt.Println(a > b || b > 10) // Logical OR
-}
+-- Logical operators
+print(a > b and b < 10) -- Logical AND
+print(a > b or b > 10)  -- Logical OR
 ```
 
 ## Comments
 
-```go
-package main
-
-import "fmt"
-
-func main() {
-    // This is a comment
-    /*
-    This is a
-    multiline comment
-    */
-    fmt.Println("Hello, Go!")
-}
+```lua
+-- This is a comment
+--[[
+This is a
+multiline comment
+]]
 ```
+

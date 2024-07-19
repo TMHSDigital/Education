@@ -1,50 +1,44 @@
 # Error Handling
 
-Go has a unique approach to error handling, using explicit error checking rather than exceptions.
+Lua provides mechanisms for handling errors and exceptions using the `error` function and the `pcall` and `xpcall` functions.
 
-## Basic Error Handling
+## Using pcall
 
-```go
-package main
+```lua
+function divide(a, b)
+    if b == 0 then
+        error("Cannot divide by zero")
+    else
+        return a / b
+    end
+end
 
-import (
-    "errors"
-    "fmt"
-)
-
-func divide(a, b int) (int, error) {
-    if b == 0 {
-        return 0, errors.New("Cannot divide by zero")
-    }
-    return a / b, nil
-}
-
-func main() {
-    result, err := divide(10, 0)
-    if err != nil {
-        fmt.Println("Error:", err)
-    } else {
-        fmt.Println("Result:", result)
-    }
-}
+status, result = pcall(divide, 10, 0)
+if status then
+    print(result)
+else
+    print(result)
+end
 ```
 
-## Using Panic and Recover
+## Using xpcall
 
-```go
-package main
+```lua
+function divide(a, b)
+    if b == 0 then
+        error("Cannot divide by zero")
+    else
+        return a / b
+    end
+end
 
-import "fmt"
+function errorHandler(err)
+    print("Error: " .. err)
+end
 
-func main() {
-    defer func() {
-        if r := recover(); r != nil {
-            fmt.Println("Recovered from", r)
-        }
-    }()
-
-    fmt.Println("Starting the program...")
-    panic("A severe error occurred!")
-    fmt.Println("This will not be printed.")
-}
+status, result = xpcall(divide, errorHandler, 10, 0)
+if status then
+    print(result)
+end
 ```
+
