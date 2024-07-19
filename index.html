@@ -4,7 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Repository</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="sections-css/landing-page.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .icon-section {
+            margin-top: 40px;
+        }
+        .icon-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .icon-item {
+            font-size: 48px;
+            text-align: center;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -13,16 +75,113 @@
             <p>Explore the chapters and learn various programming languages, tools, and APIs.</p>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="section-html/landing-page.html">Home</a></li>
-                <li><a href="section-html/languages.html">Languages</a></li>
-                <li><a href="section-html/tools.html">Tools</a></li>
-                <li><a href="section-html/apis.html">APIs</a></li>
-                <li><a href="section-html/main-technologies-used.html">Main Technologies Used</a></li>
-                <li><a href="section-html/powered-by.html">Powered By</a></li>
-            </ul>
-        </nav>
+        <section class="section">
+            <h2>Languages</h2>
+            <div class="btn-container">
+                <a href="Languages/Chapter-1/index.html" class="btn">Python</a>
+                <a href="Languages/Chapter-2/index.html" class="btn">JavaScript</a>
+                <a href="Languages/Chapter-3/index.html" class="btn">Java</a>
+                <a href="Languages/Chapter-4/index.html" class="btn">C#</a>
+                <a href="Languages/Chapter-5/index.html" class="btn">Go</a>
+                <a href="Languages/Chapter-6/index.html" class="btn">CSS</a>
+                <a href="Languages/Chapter-7/index.html" class="btn">C++</a>
+                <a href="Languages/Chapter-8/index.html" class="btn">Lua</a>
+                <a href="Languages/Chapter-9/index.html" class="btn">Swift</a>
+                <a href="Languages/Chapter-10/index.html" class="btn">Ruby</a>
+                <a href="Languages/Chapter-11/index.html" class="btn">Kotlin</a>
+                <a href="Languages/Chapter-12/index.html" class="btn">R</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Tools</h2>
+            <div class="btn-container">
+                <a href="Tools/01_Docker/index.html" class="btn">Docker</a>
+                <a href="Tools/02_Git/index.html" class="btn">Git</a>
+                <a href="Tools/03_VSCode/index.html" class="btn">VSCode</a>
+                <a href="Tools/04_Jenkins/index.html" class="btn">Jenkins</a>
+                <a href="Tools/05_Kubernetes/index.html" class="btn">Kubernetes</a>
+                <a href="Tools/06_Terraform/index.html" class="btn">Terraform</a>
+                <a href="Tools/07_OpenWebUI/index.html" class="btn">OpenWebUI</a>
+                <a href="Tools/08_AnythingLLM/index.html" class="btn">AnythingLLM</a>
+                <a href="Tools/09_Postman/index.html" class="btn">Postman</a>
+                <a href="Tools/10_Ansible/index.html" class="btn">Ansible</a>
+                <a href="Tools/11_Helm/index.html" class="btn">Helm</a>
+                <a href="Tools/12_AWS_CLI/index.html" class="btn">AWS CLI</a>
+                <a href="Tools/13_Azure_CLI/index.html" class="btn">Azure CLI</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>APIs</h2>
+            <div class="btn-container">
+                <a href="APIs/01_CoinAPI/index.html" class="btn">CoinAPI</a>
+                <a href="APIs/02_Etherscan/index.html" class="btn">Etherscan API</a>
+                <a href="APIs/03_Blockchain/index.html" class="btn">Blockchain.com API</a>
+                <a href="APIs/04_CoinGecko/index.html" class="btn">CoinGecko API</a>
+                <a href="APIs/05_Nomics/index.html" class="btn">Nomics API</a>
+                <a href="APIs/06_Facebook_Graph/index.html" class="btn">Facebook Graph API</a>
+                <a href="APIs/07_Instagram_Graph/index.html" class="btn">Instagram Graph API</a>
+                <a href="APIs/08_TensorFlow_Serving/index.html" class="btn">TensorFlow Serving</a>
+                <a href="APIs/09_Hugging_Face_Transformers/index.html" class="btn">Hugging Face Transformers</a>
+                <a href="APIs/10_Skyscanner/index.html" class="btn">Skyscanner</a>
+                <a href="APIs/11_Amadeus/index.html" class="btn">Amadeus</a>
+                <a href="APIs/12_OpenWeatherMap/index.html" class="btn">OpenWeatherMap</a>
+                <a href="APIs/13_Unsplash/index.html" class="btn">Unsplash</a>
+                <a href="APIs/14_Giphy/index.html" class="btn">Giphy</a>
+                <a href="APIs/15_TheCatAPI/index.html" class="btn">TheCatAPI</a>
+                <a href="APIs/16_NASA/index.html" class="btn">NASA API</a>
+                <a href="APIs/17_ExchangeRateAPI/index.html" class="btn">ExchangeRateAPI</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Main Technologies Used</h2>
+            <div class="dropdown">
+                <button class="btn">Technologies</button>
+                <div class="dropdown-content">
+                    <a href="Devicon/01_Python/index.html">Python</a>
+                    <a href="Devicon/02_JavaScript/index.html">JavaScript</a>
+                    <a href="Devicon/03_Java/index.html">Java</a>
+                    <a href="Devicon/04_HTML5/index.html">HTML5</a>
+                    <a href="Devicon/05_CSS3/index.html">CSS3</a>
+                    <a href="Devicon/06_C++/index.html">C++</a>
+                    <a href="Devicon/07_Flask/index.html">Flask</a>
+                    <a href="Devicon/08_React/index.html">React</a>
+                    <a href="Devicon/09_Nodejs/index.html">Node.js</a>
+                    <a href="Devicon/10_Django/index.html">Django</a>
+                    <a href="Devicon/11_Docker/index.html">Docker</a>
+                    <a href="Devicon/12_Git/index.html">Git</a>
+                    <a href="Devicon/13_GitHub/index.html">GitHub</a>
+                    <a href="Devicon/14_VSCode/index.html">VS Code</a>
+                    <a href="Devicon/15_Linux/index.html">Linux</a>
+                    <a href="Devicon/16_Ubuntu/index.html">Ubuntu</a>
+                    <a href="Devicon/17_AWS/index.html">AWS</a>
+                    <a href="Devicon/18_MySQL/index.html">MySQL</a>
+                    <a href="Devicon/19_PostgreSQL/index.html">PostgreSQL</a>
+                    <a href="Devicon/20_MongoDB/index.html">MongoDB</a>
+                    <a href="Devicon/21_Redis/index.html">Redis</a>
+                    <a href="Devicon/22_SQLite/index.html">SQLite</a>
+                    <a href="Devicon/23_Oracle/index.html">Oracle</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Powered By</h2>
+            <div class="dropdown">
+                <button class="btn">Powered By</button>
+                <div class="dropdown-content">
+                    <a href="https://github.com/" target="_blank">GitHub</a>
+                    <a href="https://about.gitlab.com/" target="_blank">GitLab</a>
+                    <a href="https://bitbucket.org/" target="_blank">Bitbucket</a>
+                    <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>
+                    <a href="https://www.docker.com/" target="_blank">Docker</a>
+                    <a href="https://azure.microsoft.com/en-us/services/devops/" target="_blank">Azure</a>
+                    <a href="https://aws.amazon.com/" target="_blank">AWS</a>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
