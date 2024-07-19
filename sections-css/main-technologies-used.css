@@ -1,0 +1,93 @@
+/* main-technologies-used.css */
+
+/* General styling for the Main Technologies Used page */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+
+.section a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+.icon-section {
+    margin-top: 40px;
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon-item {
+    font-size: 48px;
+    text-align: center;
+}
+
+.icon-item span {
+    font-size: 14px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
