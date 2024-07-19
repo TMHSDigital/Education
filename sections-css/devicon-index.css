@@ -1,0 +1,49 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-family: 'Lobster', cursive;
+    color: #333;
+}
+
+.icon-section {
+    margin-bottom: 40px;
+}
+
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    text-align: center;
+}
+
+.icon-item i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.icon-item span {
+    font-size: 14px;
+}
