@@ -1,30 +1,38 @@
-name: Deploy
+title: Education Repository
+description: "Explore various programming languages, tools, and APIs"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://TMHSDigital.github.io" # the base hostname & protocol for your site
 
-on:
-  push:
-    branches:
-      - main  # Change this to your default branch name if different
+markdown: kramdown
+theme: jekyll-theme-cayman
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+# Build settings
+plugins:
+  - jekyll-feed
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+  - Rakefile
+  - tmp
+  - **.ts
+  - **.map
 
-      - name: Install dependencies
-        run: npm install
+# Social links
+social:
+  github: https://github.com/TMHSDigital
+  linkedin: https://www.linkedin.com/in/thomasmathes1
+  twitter: https://twitter.com/your_twitter_handle
 
-      - name: Build
-        run: npm run build
+# Deployment settings for GitHub Pages
+github:
+  is_project_page: true
+  repository_url: https://github.com/TMHSDigital/Education
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+# Custom settings
+paginate: 5
+paginate_path: "/page:num/"
