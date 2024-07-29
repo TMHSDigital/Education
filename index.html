@@ -12,16 +12,16 @@
         <h1>Educational Repository</h1>
         <p>Explore the chapters and learn various programming languages, tools, and APIs.</p>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="pages-html/languages-dropdown.html">Languages</a>
-            <a href="pages-html/tools-dropdown.html">Tools</a>
-            <a href="pages-html/apis-dropdown.html">APIs</a>
-            <a href="pages-html/main-technologies-used.html">Main Technologies Used</a>
-            <a href="pages-html/powered-by.html">Powered By</a>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="pages-html/languages-dropdown.html" class="nav-link">Languages</a>
+            <a href="pages-html/tools-dropdown.html" class="nav-link">Tools</a>
+            <a href="pages-html/apis-dropdown.html" class="nav-link">APIs</a>
+            <a href="pages-html/main-technologies-used.html" class="nav-link">Main Technologies Used</a>
+            <a href="pages-html/powered-by.html" class="nav-link">Powered By</a>
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container" id="home">
         <section class="section">
             <h2>Landing Page</h2>
             <p>Welcome to the Educational Repository. Explore the chapters and learn various programming languages, tools, and APIs.</p>
@@ -48,5 +48,34 @@
     <footer>
         <p>&copy; 2024 Educational Repository. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Smooth scrolling for nav links
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    if (this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Add fade-in effect to sections on scroll
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            });
+
+            document.querySelectorAll('.section-link').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
 </body>
 </html>

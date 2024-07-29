@@ -69,11 +69,12 @@ main {
 }
 
 .section-link {
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.6s ease;
+    opacity: 0;
 }
 
-.section-link:hover {
-    background-color: #e2e8f0;
+.section-link.fade-in {
+    opacity: 1;
 }
 
 .container {
