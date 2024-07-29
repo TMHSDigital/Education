@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Repository</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-    <link rel="stylesheet" href="master-styles.css"> <!-- Update the path if necessary -->
+    <link rel="stylesheet" href="master-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>Educational Repository</h1>
         <p>Explore the chapters and learn various programming languages, tools, and APIs.</p>
-        <nav>
-            <a href="#home" class="nav-link">Home</a>
-            <a href="pages-html/languages-dropdown.html" class="nav-link">Languages</a>
-            <a href="pages-html/tools-dropdown.html" class="nav-link">Tools</a>
-            <a href="pages-html/apis-dropdown.html" class="nav-link">APIs</a>
-            <a href="pages-html/main-technologies-used.html" class="nav-link">Main Technologies Used</a>
-            <a href="pages-html/powered-by.html" class="nav-link">Powered By</a>
-        </nav>
     </header>
 
-    <main class="container" id="home">
+    <nav>
+        <a href="#home">Home</a>
+        <a href="pages-html/languages-dropdown.html">Languages</a>
+        <a href="pages-html/tools-dropdown.html">Tools</a>
+        <a href="pages-html/apis-dropdown.html">APIs</a>
+        <a href="pages-html/main-technologies-used.html">Main Technologies Used</a>
+        <a href="pages-html/powered-by.html">Powered By</a>
+    </nav>
+
+    <main id="home" class="container" role="main">
         <section class="section">
             <h2>Landing Page</h2>
             <p>Welcome to the Educational Repository. Explore the chapters and learn various programming languages, tools, and APIs.</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <a href="pages-html/languages-dropdown.html" class="bg-white p-6 rounded-lg shadow-md hover:bg-gray-50 section-link">
-                    <h3 class="text-xl font-semibold mb-2">Explore Languages</h3>
+
+            <div class="grid">
+                <a href="pages-html/languages-dropdown.html" class="section-link">
+                    <h3>Explore Languages</h3>
                 </a>
-                <a href="pages-html/tools-dropdown.html" class="bg-white p-6 rounded-lg shadow-md hover:bg-gray-50 section-link">
-                    <h3 class="text-xl font-semibold mb-2">Explore Tools</h3>
+                <a href="pages-html/tools-dropdown.html" class="section-link">
+                    <h3>Explore Tools</h3>
                 </a>
-                <a href="pages-html/apis-dropdown.html" class="bg-white p-6 rounded-lg shadow-md hover:bg-gray-50 section-link">
-                    <h3 class="text-xl font-semibold mb-2">Explore APIs</h3>
+                <a href="pages-html/apis-dropdown.html" class="section-link">
+                    <h3>Explore APIs</h3>
                 </a>
-                <a href="pages-html/main-technologies-used.html" class="bg-white p-6 rounded-lg shadow-md hover:bg-gray-50 section-link">
-                    <h3 class="text-xl font-semibold mb-2">Explore Main Technologies Used</h3>
+                <a href="pages-html/main-technologies-used.html" class="section-link">
+                    <h3>Explore Main Technologies Used</h3>
                 </a>
-                <a href="pages-html/powered-by.html" class="bg-white p-6 rounded-lg shadow-md hover:bg-gray-50 section-link">
-                    <h3 class="text-xl font-semibold mb-2">Explore Powered By</h3>
+                <a href="pages-html/powered-by.html" class="section-link">
+                    <h3>Explore Powered By</h3>
                 </a>
             </div>
         </section>
@@ -49,33 +52,6 @@
         <p>&copy; 2024 Educational Repository. All rights reserved.</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Smooth scrolling for nav links
-            document.querySelectorAll('nav a').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    if (this.getAttribute('href').startsWith('#')) {
-                        e.preventDefault();
-                        document.querySelector(this.getAttribute('href')).scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-
-            // Add fade-in effect to sections on scroll
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('fade-in');
-                    }
-                });
-            });
-
-            document.querySelectorAll('.section-link').forEach(section => {
-                observer.observe(section);
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
