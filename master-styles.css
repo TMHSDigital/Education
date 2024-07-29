@@ -68,18 +68,12 @@ main {
     line-height: 1.6;
 }
 
-.section a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.section-link {
+    transition: background-color 0.3s ease;
 }
 
-.section a:hover {
-    background-color: #0056b3;
+.section-link:hover {
+    background-color: #e2e8f0;
 }
 
 .container {
