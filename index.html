@@ -1,7 +1,51 @@
----\nlayout: default\ntitle: Home\n---\n\n<section>\n  <h2>Welcome to the Educational Repository</h2>\n  <p>Explore the chapters and learn various programming languages, tools, and APIs.</p>\n  <a href=\
-{ \"/languages/\" | relative_url }
-\>Explore Languages</a>\n  <a href=\
-{ \"/tools/\" | relative_url }
-\>Explore Tools</a>\n  <a href=\
-{ \"/apis/\" | relative_url }
-\>Explore APIs</a>\n</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Repository</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-4 text-center">
+        <h1 class="text-4xl font-bold">Educational Repository</h1>
+        <p class="text-lg mt-2">Explore the chapters and learn various programming languages, tools, and APIs.</p>
+        <nav class="mt-4">
+            <a href="index.html" class="text-white mx-2">Home</a>
+            <a href="pages-html/languages-dropdown.html" class="text-white mx-2">Languages</a>
+            <a href="pages-html/tools-dropdown.html" class="text-white mx-2">Tools</a>
+            <a href="pages-html/apis-dropdown.html" class="text-white mx-2">APIs</a>
+            <a href="pages-html/main-technologies-used.html" class="text-white mx-2">Main Technologies Used</a>
+            <a href="pages-html/powered-by.html" class="text-white mx-2">Powered By</a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto mt-10">
+        <section class="text-center">
+            <h2 class="text-2xl font-semibold mb-6">Landing Page</h2>
+            <p class="text-lg mb-6">Welcome to the Educational Repository. Explore the chapters and learn various programming languages, tools, and APIs.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <a href="pages-html/languages-dropdown.html" class="bg-white p-6 rounded-lg shadow-md hover:bg-gray-50">
+                    <h3 class="text-xl font-semibold mb-2">Explore Languages</h3>
+                </a>
+                <a href="pages-html/tools-dropdown.html" class="bg-white p-6 rounded-lg shadow-md hover:bg-gray-50">
+                    <h3 class="text-xl font-semibold mb-2">Explore Tools</h3>
+                </a>
+                <a href="pages-html/apis-dropdown.html" class="bg-white p-6 rounded-lg shadow-md hover:bg-gray-50">
+                    <h3 class="text-xl font-semibold mb-2">Explore APIs</h3>
+                </a>
+                <a href="pages-html/main-technologies-used.html" class="bg-white p-6 rounded-lg shadow-md hover:bg-gray-50">
+                    <h3 class="text-xl font-semibold mb-2">Explore Main Technologies Used</h3>
+                </a>
+                <a href="pages-html/powered-by.html" class="bg-white p-6 rounded-lg shadow-md hover:bg-gray-50">
+                    <h3 class="text-xl font-semibold mb-2">Explore Powered By</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-4 text-center mt-10">
+        <p>&copy; 2024 Educational Repository. All rights reserved.</p>
+    </footer>
+</body>
+</html>
