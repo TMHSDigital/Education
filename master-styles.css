@@ -46,6 +46,12 @@ nav a:hover {
     text-decoration: underline;
 }
 
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .section {
     padding: 20px;
     text-align: center;
@@ -83,6 +89,16 @@ nav a:hover {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 ul {
