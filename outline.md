@@ -5,10 +5,6 @@
 ## Root Directory Structure
 - .github
 - API
-- build
-- Devicon-index
-  - devicon-index.css
-  - index.html
 - Languages
   - Chapter-1
   - Chapter-2
@@ -36,7 +32,6 @@
 - index.html
 - LICENSE
 - outline.md
-- sections.css
 - site-styles.css
 
 ## Description of Key Files and Folders
