@@ -1,3 +1,4 @@
+// Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Fade in effect for section links
     const sectionLinks = document.querySelectorAll('.section-link');
