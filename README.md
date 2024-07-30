@@ -102,9 +102,27 @@
 
 ---
 
-<h4 align="center">Original repository created by</h4>
+<h2 align="center">About the Author</h2>
+
+<p align="center">Hi, I'm Thomas Mathes, a seasoned hospitality professional and tech enthusiast. I specialize in hospitality management, business development, and innovative tech solutions. Connect with me!</p>
+
 <p align="center">
-  <strong>Thomas Mathes</strong><br>
-  <a href="https://github.com/TMHSDigital"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile"></a>
-  <a href="https://www.linkedin.com/in/thomasmathes/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.instagram.com/tmhs.ig/" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+  <a href="https://www.linkedin.com/company/tm-hospitality-strategies/?viewAsMember=true" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="TMHS LinkedIn">
+  </a>
+  <a href="https://www.linkedin.com/in/thomasmathes1/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Personal LinkedIn">
+  </a>
 </p>
+
+<p align="center">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/TMHSDigital/TMHSDigital?style=for-the-badge">
+  <img alt="GitHub stars" src="https://img.shields.io/github/stars/TMHSDigital/TMHSDigital?style=for-the-badge">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/TMHSDigital/TMHSDigital?style=for-the-badge">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/TMHSDigital/TMHSDigital?style=for-the-badge">
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/TMHSDigital/TMHSDigital?style=for-the-badge">
+</p>
+
