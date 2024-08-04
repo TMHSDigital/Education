@@ -4,7 +4,11 @@
   <img src="https://img.shields.io/github/contributors/TMHSDigital/Education">
   <img src="https://img.shields.io/github/last-commit/TMHSDigital/Education">
   <img src="https://img.shields.io/github/languages/count/TMHSDigital/Education">
+  <a href="https://coveralls.io/github/TMHSDigital/Education?branch=main">
+    <img src="https://coveralls.io/repos/github/TMHSDigital/Education/badge.svg?branch=main" alt="Coverage Status">
+  </a>
 </p>
+
 
 ---
 
